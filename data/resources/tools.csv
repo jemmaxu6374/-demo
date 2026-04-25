@@ -1,0 +1,26 @@
+resource_id,name,vendor,url,category,related_competencies,summary,learning_mode
+TOOL.001,GitHub Copilot,GitHub,https://github.com/features/copilot,AI Copilot,"C.tool.aicopilot;C.hard.prog.py;C.hard.prog.ts;C.hard.prog.go","IDE 内代码补全与对话助手",tool
+TOOL.002,Cursor,Anysphere,https://cursor.sh,AI IDE,"C.tool.aicopilot;C.tool.prompt","面向 AI 原生编程的 IDE",tool
+TOOL.003,CodeBuddy,腾讯,https://copilot.tencent.com,AI Copilot,"C.tool.aicopilot;C.hard.prog.py","腾讯内部 AI 研发助手，支持 IDE 插件与 Web 客户端",tool
+TOOL.004,Claude Code,Anthropic,https://claude.ai/code,AI Agent,"C.tool.aicopilot;C.tool.prompt","终端原生 Coding Agent",tool
+TOOL.005,LangChain,LangChain,https://www.langchain.com,LLM Framework,"C.hard.ml.dl;C.tool.prompt;C.hard.prog.py","LLM 应用开发最主流框架",tool
+TOOL.006,LlamaIndex,LlamaIndex,https://www.llamaindex.ai,LLM Framework,"C.hard.ml.dl;C.domain.ai-app","RAG 场景更聚焦的框架",tool
+TOOL.007,PyTorch,Meta,https://pytorch.org,ML Framework,"C.hard.ml.dl;C.hard.ml.basic","深度学习主流训练框架",tool
+TOOL.008,Weights & Biases,W&B,https://wandb.ai,ML Experiment Tracking,"C.hard.ml.dl;C.hard.data.analysis","实验跟踪与可视化",tool
+TOOL.009,Airflow,Apache,https://airflow.apache.org,Data Orchestration,"C.hard.data.eng","业界最成熟的工作流编排",tool
+TOOL.010,dbt,dbt Labs,https://www.getdbt.com,Data Transformation,"C.hard.data.eng;C.hard.db.sql","SQL 数仓建模与测试",tool
+TOOL.011,Grafana,Grafana Labs,https://grafana.com,Observability,"C.tool.observability","Metrics 可视化事实标准",tool
+TOOL.012,Prometheus,CNCF,https://prometheus.io,Monitoring,"C.tool.observability","云原生 Metrics 采集标配",tool
+TOOL.013,Datadog,Datadog,https://www.datadoghq.com,APM,"C.tool.observability","一站式可观测性 SaaS",tool
+TOOL.014,Figma,Figma,https://www.figma.com,Design,"C.hard.ux","协作式 UI/UX 设计工具",tool
+TOOL.015,Linear,Linear,https://linear.app,Project Management,"C.tool.pm;C.soft.collab","轻量级现代项目管理",tool
+TOOL.016,TAPD,腾讯,https://www.tapd.cn,Project Management,"C.tool.pm","腾讯内部主流项目管理平台",tool
+TOOL.017,Notion,Notion,https://www.notion.so,Docs,"C.tool.notion","结构化文档与知识库",tool
+TOOL.018,腾讯文档,腾讯,https://docs.qq.com,Docs,"C.tool.notion","协作文档与智能表格",tool
+TOOL.019,Postman,Postman,https://www.postman.com,API,"C.hard.testing","接口调试与自动化测试",tool
+TOOL.020,Playwright,Microsoft,https://playwright.dev,Test,"C.hard.testing;C.hard.prog.ts","跨浏览器端到端测试",tool
+TOOL.021,Jupyter,Project Jupyter,https://jupyter.org,Notebook,"C.hard.data.analysis;C.hard.ml.basic","交互式数据分析与原型开发",tool
+TOOL.022,DBeaver,DBeaver Corp,https://dbeaver.io,DB Client,"C.hard.db.sql","跨数据库通用客户端",tool
+TOOL.023,Loguru,Delgan,https://github.com/Delgan/loguru,Logging,"C.tool.observability;C.hard.prog.py","更优雅的 Python 日志库",tool
+TOOL.024,Sentry,Sentry,https://sentry.io,Error Tracking,"C.tool.observability","业界最主流的错误监控",tool
+TOOL.025,Burp Suite,PortSwigger,https://portswigger.net/burp,Security,"C.hard.security","Web 安全测试工业标杆",tool

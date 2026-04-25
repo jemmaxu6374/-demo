@@ -1,0 +1,16 @@
+# Streamlit Cloud 部署用最小依赖（刻意精简，保证构建时间 < 3 分钟）
+# 完整开发依赖见 requirements-dev.txt
+
+streamlit>=1.32.0,<2.0
+plotly>=5.19.0
+
+pydantic>=2.5.0,<3.0
+pydantic-settings>=2.1.0
+python-dotenv>=1.0.0
+
+sqlalchemy>=2.0.25,<3.0
+loguru>=0.7.2
+
+# Python 3.10+ 语法 backport，3.9 才需要；Streamlit Cloud 默认 3.11 可跳过
+# 但保留不伤害
+eval_type_backport>=0.2.0

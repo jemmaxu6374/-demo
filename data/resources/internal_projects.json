@@ -1,0 +1,112 @@
+[
+  {
+    "resource_id": "PROJ.001",
+    "title": "交易核心链路压测演练",
+    "type": "internal_project",
+    "owner_team": "交易平台",
+    "related_competencies": ["C.hard.distributed", "C.hard.arch", "C.tool.observability"],
+    "duration_weeks": 4,
+    "commitment": "20% time",
+    "description": "参与下单-支付-履约核心链路的全链路压测，参与容量建模与性能优化",
+    "learning_mode": "experiential"
+  },
+  {
+    "resource_id": "PROJ.002",
+    "title": "AI 客服 V2 孵化",
+    "type": "internal_project",
+    "owner_team": "AI 应用",
+    "related_competencies": ["C.hard.ml.dl", "C.tool.prompt", "C.domain.ai-app"],
+    "duration_weeks": 8,
+    "commitment": "50% time",
+    "description": "从 0-1 做行业版 AI 客服，涵盖 RAG、Agent、效果评测全链路",
+    "learning_mode": "experiential"
+  },
+  {
+    "resource_id": "PROJ.003",
+    "title": "数据平台元数据血缘重构",
+    "type": "internal_project",
+    "owner_team": "数据中台",
+    "related_competencies": ["C.hard.data.eng", "C.hard.arch"],
+    "duration_weeks": 6,
+    "commitment": "30% time",
+    "description": "建设字段级血缘、影响分析、变更风险预警",
+    "learning_mode": "experiential"
+  },
+  {
+    "resource_id": "PROJ.004",
+    "title": "设计系统升级 3.0",
+    "type": "internal_project",
+    "owner_team": "用户体验",
+    "related_competencies": ["C.hard.ux", "C.hard.prog.ts", "C.soft.collab"],
+    "duration_weeks": 8,
+    "commitment": "40% time",
+    "description": "参与 Design Token 体系与多端一致性方案，覆盖 8 个产品线",
+    "learning_mode": "experiential"
+  },
+  {
+    "resource_id": "PROJ.005",
+    "title": "K8s 多集群管理方案",
+    "type": "internal_project",
+    "owner_team": "基础平台",
+    "related_competencies": ["C.tool.docker", "C.tool.cloud", "C.tool.observability"],
+    "duration_weeks": 10,
+    "commitment": "30% time",
+    "description": "Karmada 多集群联邦 + 跨区域容灾实战",
+    "learning_mode": "experiential"
+  },
+  {
+    "resource_id": "HACK.001",
+    "title": "2026 年度 AI Hackathon：AI Native Apps",
+    "type": "hackathon",
+    "owner_team": "创新实验室",
+    "related_competencies": ["C.hard.ml.dl", "C.tool.prompt", "C.domain.ai-app", "C.soft.collab"],
+    "duration_weeks": 1,
+    "commitment": "full time 1 week",
+    "description": "48 小时组队完成一个 AI 原生产品原型，评委包含业务一号位",
+    "learning_mode": "experiential"
+  },
+  {
+    "resource_id": "HACK.002",
+    "title": "Prompt 大赛：最佳 Prompt 模板征集",
+    "type": "hackathon",
+    "owner_team": "AI 应用",
+    "related_competencies": ["C.tool.prompt", "C.domain.ai-app"],
+    "duration_weeks": 2,
+    "commitment": "low",
+    "description": "提交 3 个可复用 Prompt 到内部 Prompt Library，社区投票 + 专家评选",
+    "learning_mode": "experiential"
+  },
+  {
+    "resource_id": "HACK.003",
+    "title": "安全攻防演练月",
+    "type": "hackathon",
+    "owner_team": "安全",
+    "related_competencies": ["C.hard.security", "C.hard.testing"],
+    "duration_weeks": 4,
+    "commitment": "20% time",
+    "description": "红蓝对抗演练，攻击队 + 防守队双向学习",
+    "learning_mode": "experiential"
+  },
+  {
+    "resource_id": "HACK.004",
+    "title": "SQL 性能优化挑战赛",
+    "type": "hackathon",
+    "owner_team": "数据中台",
+    "related_competencies": ["C.hard.db.sql", "C.hard.data.eng"],
+    "duration_weeks": 2,
+    "commitment": "10% time",
+    "description": "给定慢 SQL 集，优化到目标耗时以内，排行榜实时更新",
+    "learning_mode": "experiential"
+  },
+  {
+    "resource_id": "HACK.005",
+    "title": "效率工具 Hack Day",
+    "type": "hackathon",
+    "owner_team": "创新实验室",
+    "related_competencies": ["C.hard.prog.ts", "C.tool.aicopilot"],
+    "duration_weeks": 1,
+    "commitment": "1 day",
+    "description": "单天完成一个提升团队效率的小工具，上线者获推广机会",
+    "learning_mode": "experiential"
+  }
+]

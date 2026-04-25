@@ -1,0 +1,101 @@
+[
+  {
+    "resource_id": "PROMPT.001",
+    "title": "RAG 查询改写 Prompt",
+    "type": "prompt",
+    "related_competencies": ["C.tool.prompt", "C.hard.ml.dl"],
+    "content": "你是一个查询改写助手。根据用户原始问题，生成 3 个语义等价但表达不同的 query，用于扩大召回。输出 JSON 数组。",
+    "summary": "RAG 召回阶段的查询扩展模板",
+    "learning_mode": "tool"
+  },
+  {
+    "resource_id": "PROMPT.002",
+    "title": "LLM 结构化输出 Few-shot 模板",
+    "type": "prompt",
+    "related_competencies": ["C.tool.prompt"],
+    "content": "你的输出必须严格符合以下 JSON Schema：...。给定 2 个示例：Input→Output。用户输入：{query}",
+    "summary": "稳定约束 LLM 输出结构的万能模板",
+    "learning_mode": "tool"
+  },
+  {
+    "resource_id": "PROMPT.003",
+    "title": "代码评审 Prompt",
+    "type": "prompt",
+    "related_competencies": ["C.tool.aicopilot", "C.tool.prompt"],
+    "content": "作为资深工程师评审以下 PR diff：检查可读性、边界条件、安全风险、性能隐患，逐条给出修改建议与理由。",
+    "summary": "接入 Git webhook 后可做自动 Code Review",
+    "learning_mode": "tool"
+  },
+  {
+    "resource_id": "PROMPT.004",
+    "title": "PRD 评审 Prompt",
+    "type": "prompt",
+    "related_competencies": ["C.hard.product.pm", "C.tool.prompt"],
+    "content": "作为资深产品经理审阅以下 PRD：检查用户价值、竞品差异、数据指标、风险与回退方案，按维度打分并输出改进建议。",
+    "summary": "PRD 自评与导师 Review 加速器",
+    "learning_mode": "tool"
+  },
+  {
+    "resource_id": "SOP.001",
+    "title": "线上故障 5 步复盘 SOP",
+    "type": "playbook",
+    "related_competencies": ["C.tool.observability", "C.soft.problem", "C.soft.ownership"],
+    "content": "步骤：1) 时间线还原 2) 直接原因 3) 根因 5 why 4) 处置过程评估 5) Action Items + 责任人 + 时间点。模板见链接。",
+    "summary": "SRE/研发线上故障复盘标准模板",
+    "learning_mode": "tool"
+  },
+  {
+    "resource_id": "SOP.002",
+    "title": "新功能灰度发布 SOP",
+    "type": "playbook",
+    "related_competencies": ["C.tool.cicd", "C.hard.testing", "C.soft.problem"],
+    "content": "灰度 5 阶段：1% 内部 → 5% 白名单 → 20% 城市灰度 → 50% → 100%。每阶段必检指标与回滚阈值模板。",
+    "summary": "降低新功能上线风险的标准流程",
+    "learning_mode": "tool"
+  },
+  {
+    "resource_id": "SOP.003",
+    "title": "A/B 实验设计 SOP",
+    "type": "playbook",
+    "related_competencies": ["C.hard.data.analysis", "C.hard.product.pm"],
+    "content": "1) 明确假设 2) 选指标（主/副/护栏）3) 样本量估算 4) 分流策略 5) 显著性分析 6) 业务决策建议。模板含计算器。",
+    "summary": "从假设到决策的完整实验 playbook",
+    "learning_mode": "tool"
+  },
+  {
+    "resource_id": "SOP.004",
+    "title": "技术评审会议模板",
+    "type": "playbook",
+    "related_competencies": ["C.hard.arch", "C.soft.comm", "C.soft.collab"],
+    "content": "背景 / 目标 / 现状 / 方案（至少 2 个）/ 方案对比矩阵 / 推荐与理由 / 风险 / Action Items。",
+    "summary": "技术方案评审标准交付物，一页可 review",
+    "learning_mode": "tool"
+  },
+  {
+    "resource_id": "SOP.005",
+    "title": "新人 30/60/90 入职 SOP",
+    "type": "playbook",
+    "related_competencies": ["C.soft.learn", "C.soft.collab"],
+    "content": "Day1-30: 代码/业务/流程熟悉 + 第一个 PR。Day31-60: 独立交付一个需求。Day61-90: 主导一个小项目或改进提案。",
+    "summary": "新人导师与新人共用的成长路径 Playbook",
+    "learning_mode": "tool"
+  },
+  {
+    "resource_id": "SOP.006",
+    "title": "LLM 应用评测 SOP",
+    "type": "playbook",
+    "related_competencies": ["C.domain.ai-app", "C.tool.prompt", "C.hard.testing"],
+    "content": "1) 构建黄金测试集（≥ 100 条）2) 定评测维度 3) 人工 + 自动双轨评 4) 回归基线对比 5) Bad Case 分类归因。",
+    "summary": "保障 LLM 应用效果可度量的评测框架",
+    "learning_mode": "tool"
+  },
+  {
+    "resource_id": "SOP.007",
+    "title": "数据开发提测 SOP",
+    "type": "playbook",
+    "related_competencies": ["C.hard.data.eng", "C.hard.testing"],
+    "content": "Checklist：1) Schema 稳定性 2) 空值与边界 3) 全量对比 4) 同环比 5) 血缘与依赖 6) 补数方案。",
+    "summary": "数据任务上线前自检标准清单",
+    "learning_mode": "tool"
+  }
+]

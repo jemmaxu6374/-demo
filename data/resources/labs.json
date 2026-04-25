@@ -1,0 +1,92 @@
+[
+  {
+    "resource_id": "LAB.001",
+    "title": "LLM Playground",
+    "type": "sandbox",
+    "related_competencies": ["C.hard.ml.dl", "C.tool.prompt"],
+    "url": "https://lab.internal/llm-playground",
+    "description": "提供 GPT-4 / Claude / Qwen / DeepSeek 等模型的调试环境，日免费额度 100 次",
+    "learning_mode": "experiential"
+  },
+  {
+    "resource_id": "LAB.002",
+    "title": "K8s 沙盒集群",
+    "type": "sandbox",
+    "related_competencies": ["C.tool.docker", "C.tool.cloud"],
+    "url": "https://lab.internal/k8s-sandbox",
+    "description": "隔离的小型 K8s 集群，可自由部署与销毁，每人单独 namespace",
+    "learning_mode": "experiential"
+  },
+  {
+    "resource_id": "LAB.003",
+    "title": "数据开发沙盒",
+    "type": "sandbox",
+    "related_competencies": ["C.hard.data.eng", "C.hard.db.sql"],
+    "url": "https://lab.internal/data-sandbox",
+    "description": "提供脱敏样本数据与 Flink/Spark 环境，用于数据任务原型开发",
+    "learning_mode": "experiential"
+  },
+  {
+    "resource_id": "LAB.004",
+    "title": "安全靶场",
+    "type": "sandbox",
+    "related_competencies": ["C.hard.security"],
+    "url": "https://lab.internal/sec-range",
+    "description": "仿真漏洞环境，涵盖 OWASP Top 10 全系列实操",
+    "learning_mode": "experiential"
+  },
+  {
+    "resource_id": "LAB.005",
+    "title": "性能压测实验室",
+    "type": "sandbox",
+    "related_competencies": ["C.tool.observability", "C.hard.distributed"],
+    "url": "https://lab.internal/perf-lab",
+    "description": "按项目申请独立压测环境，配套 Grafana / Prometheus / Loki",
+    "learning_mode": "experiential"
+  },
+  {
+    "resource_id": "LAB.006",
+    "title": "AI 模型微调 Workbench",
+    "type": "sandbox",
+    "related_competencies": ["C.hard.ml.dl"],
+    "url": "https://lab.internal/finetune-wb",
+    "description": "LoRA / QLoRA 微调环境，带 A100 小时额度",
+    "learning_mode": "experiential"
+  },
+  {
+    "resource_id": "LAB.007",
+    "title": "前端组件实验田",
+    "type": "sandbox",
+    "related_competencies": ["C.hard.prog.ts", "C.hard.ux"],
+    "url": "https://lab.internal/fe-lab",
+    "description": "Storybook + Playground，孵化新组件",
+    "learning_mode": "experiential"
+  },
+  {
+    "resource_id": "LAB.008",
+    "title": "Prompt A/B 实验平台",
+    "type": "sandbox",
+    "related_competencies": ["C.tool.prompt", "C.domain.ai-app"],
+    "url": "https://lab.internal/prompt-ab",
+    "description": "可对比不同 Prompt 的效果指标，支持批量评测",
+    "learning_mode": "experiential"
+  },
+  {
+    "resource_id": "LAB.009",
+    "title": "数据可视化沙盒",
+    "type": "sandbox",
+    "related_competencies": ["C.hard.data.analysis"],
+    "url": "https://lab.internal/viz-lab",
+    "description": "Superset / Grafana 可视化练手环境，脱敏样本数据",
+    "learning_mode": "experiential"
+  },
+  {
+    "resource_id": "LAB.010",
+    "title": "全链路 Trace 实验场",
+    "type": "sandbox",
+    "related_competencies": ["C.tool.observability"],
+    "url": "https://lab.internal/trace-lab",
+    "description": "OpenTelemetry 接入样例与 Jaeger 可视化",
+    "learning_mode": "experiential"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "task_id": "T.001",
+    "employee_id": "emp_001",
+    "title": "AI 客服知识库 RAG 升级",
+    "description": "对现有 RAG 系统做多路召回 + rerank 升级，目标把 Top-3 命中率从 50% 提到 80%。涉及 Python 编程、Embedding 与向量库、Prompt Engineering、LLM 应用效果评测。",
+    "status": "in_progress"
+  },
+  {
+    "task_id": "T.002",
+    "employee_id": "emp_013",
+    "title": "订单服务分库分表方案设计",
+    "description": "订单量预计增长 5 倍，需要拆分到 16 库 64 表。要求输出方案文档、评审通过、灰度方案、补偿机制。涉及分布式系统、SQL 数据库设计与架构。",
+    "status": "new"
+  },
+  {
+    "task_id": "T.003",
+    "employee_id": "emp_005",
+    "title": "AI 写作助手第二版 PRD",
+    "description": "需求调研 + 竞品分析 + 产品形态设计 + 成本建模 + 灰度计划。涉及产品设计、AI 应用、Prompt Engineering、数据分析。",
+    "status": "in_progress"
+  },
+  {
+    "task_id": "T.004",
+    "employee_id": "emp_009",
+    "title": "LLM 评测体系建设",
+    "description": "为所有 AI 应用建立统一评测框架。涉及 LLM 应用、Prompt Engineering、测试与质量工程、数据分析。",
+    "status": "new"
+  },
+  {
+    "task_id": "T.005",
+    "employee_id": "emp_010",
+    "title": "K8s 多集群可观测性升级",
+    "description": "接入 OpenTelemetry + Loki + Tempo，实现 Logs/Metrics/Traces 三位一体。涉及容器化、可观测性、云平台、Go 编程。",
+    "status": "in_progress"
+  }
+]

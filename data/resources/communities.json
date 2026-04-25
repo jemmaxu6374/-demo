@@ -1,0 +1,112 @@
+[
+  {
+    "resource_id": "COMM.001",
+    "name": "AI 应用开发者小组",
+    "type": "internal_group",
+    "platform": "企业微信",
+    "url": "wxwork://group/ai-dev",
+    "member_count": 180,
+    "related_competencies": ["C.hard.ml.dl", "C.tool.prompt", "C.domain.ai-app"],
+    "description": "每周三晚 8 点技术分享 + Prompt 互评 + 案例共读",
+    "learning_mode": "social"
+  },
+  {
+    "resource_id": "COMM.002",
+    "name": "后端架构师沙龙",
+    "type": "internal_group",
+    "platform": "企业微信",
+    "url": "wxwork://group/backend-arch",
+    "member_count": 120,
+    "related_competencies": ["C.hard.arch", "C.hard.distributed"],
+    "description": "每月一次架构评审共建与疑难 Case 讨论",
+    "learning_mode": "social"
+  },
+  {
+    "resource_id": "COMM.003",
+    "name": "SRE 稳定性群",
+    "type": "internal_group",
+    "platform": "企业微信",
+    "url": "wxwork://group/sre-ops",
+    "member_count": 95,
+    "related_competencies": ["C.tool.observability", "C.tool.docker", "C.tool.cloud"],
+    "description": "故障复盘 + 最佳实践同步",
+    "learning_mode": "social"
+  },
+  {
+    "resource_id": "COMM.004",
+    "name": "前端同好会",
+    "type": "internal_group",
+    "platform": "企业微信",
+    "url": "wxwork://group/frontend-guild",
+    "member_count": 210,
+    "related_competencies": ["C.hard.prog.ts", "C.hard.ux"],
+    "description": "新特性跟踪 + 组件共建 + 双周 Tech Talk",
+    "learning_mode": "social"
+  },
+  {
+    "resource_id": "COMM.005",
+    "name": "数据技术圈",
+    "type": "internal_group",
+    "platform": "企业微信",
+    "url": "wxwork://group/data-eng",
+    "member_count": 160,
+    "related_competencies": ["C.hard.data.eng", "C.hard.data.analysis", "C.hard.db.sql"],
+    "description": "数仓 / Spark / Flink / 湖仓一体实战交流",
+    "learning_mode": "social"
+  },
+  {
+    "resource_id": "COMM.006",
+    "name": "AI 产品经理圈",
+    "type": "internal_group",
+    "platform": "企业微信",
+    "url": "wxwork://group/ai-pm",
+    "member_count": 75,
+    "related_competencies": ["C.hard.product.pm", "C.domain.ai-app"],
+    "description": "AI 产品设计方法论与案例共学",
+    "learning_mode": "social"
+  },
+  {
+    "resource_id": "COMM.007",
+    "name": "安全与合规社群",
+    "type": "internal_group",
+    "platform": "企业微信",
+    "url": "wxwork://group/sec",
+    "member_count": 60,
+    "related_competencies": ["C.hard.security"],
+    "description": "漏洞预警 / 红蓝对抗 / 合规更新",
+    "learning_mode": "social"
+  },
+  {
+    "resource_id": "COMM.008",
+    "name": "新人学习营",
+    "type": "internal_group",
+    "platform": "企业微信",
+    "url": "wxwork://group/newbie-camp",
+    "member_count": 85,
+    "related_competencies": ["C.soft.learn", "C.soft.comm"],
+    "description": "0-1 年新人自习室 + 双周 1on1 同侪配对",
+    "learning_mode": "social"
+  },
+  {
+    "resource_id": "COMM.009",
+    "name": "女性技术人社群",
+    "type": "internal_group",
+    "platform": "企业微信",
+    "url": "wxwork://group/women-in-tech",
+    "member_count": 140,
+    "related_competencies": ["C.soft.lead", "C.soft.comm"],
+    "description": "职业发展分享 + Mentor 配对",
+    "learning_mode": "social"
+  },
+  {
+    "resource_id": "COMM.010",
+    "name": "开源贡献者之家",
+    "type": "internal_group",
+    "platform": "企业微信",
+    "url": "wxwork://group/oss-contributors",
+    "member_count": 50,
+    "related_competencies": ["C.tool.git", "C.soft.comm"],
+    "description": "第一次 PR 指南 + 项目推荐 + 贡献经验交流",
+    "learning_mode": "social"
+  }
+]

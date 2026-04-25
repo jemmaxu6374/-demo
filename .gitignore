@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+build/
+dist/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Env（绝不能提交）
+.env
+.env.local
+
+# 运行时生成（Streamlit Cloud 冷启动会重建）
+db/*.sqlite
+db/*.sqlite-journal
+data/vector_store/
+logs/
+*.log
+
+# Streamlit cache
+.streamlit/secrets.toml
+
+# 本地生成的行为流 jsonl（体积小，其实可以提交以避免冷启动耗时。
+# 默认提交，让 Streamlit Cloud 首启更快。行下方是可选不提交的命令）
+# data/behavior_streams/*/
+.DS_Store

@@ -1,0 +1,31 @@
+resource_id,title,provider,url,duration_min,is_micro,language,level,related_competencies,summary,learning_mode
+COURSE.001,"Python 后端开发实战",极客时间,https://time.geekbang.org/course/detail/100027001,900,false,zh,intermediate,"C.hard.prog.py;C.hard.db.sql;C.hard.arch","系统讲解 FastAPI/Django、数据库交互、部署运维的完整后端开发链路",formal
+COURSE.002,"Python 入门 10 分钟微课",B站,https://www.bilibili.com/video/BV1qw411y7XN,10,true,zh,beginner,"C.hard.prog.py","快速掌握 Python 基础语法与核心数据类型",formal
+COURSE.003,"Go 语言高并发实战",极客时间,https://time.geekbang.org/course/detail/100054001,720,false,zh,advanced,"C.hard.prog.go;C.hard.distributed","深入 goroutine/channel，实现高并发后端服务",formal
+COURSE.004,"TypeScript 速成 7 天",慕课网,https://www.imooc.com/learn/typescript-7d,420,false,zh,intermediate,"C.hard.prog.ts","类型系统、泛型、装饰器到工程实战一次过",formal
+COURSE.005,"System Design 面试与实战",极客时间,https://time.geekbang.org/column/intro/100074201,1200,false,zh,advanced,"C.hard.arch;C.hard.distributed","从 URL 短链到百万级聊天系统的架构案例",formal
+COURSE.006,"分布式系统核心 10 讲",拉勾教育,https://edu.lagou.com/course/distributed,600,false,zh,intermediate,"C.hard.distributed","CAP / Raft / 一致性哈希 / 消息队列 / 分库分表",formal
+COURSE.007,"MySQL 性能优化",极客时间,https://time.geekbang.org/column/intro/139,800,false,zh,intermediate,"C.hard.db.sql","索引原理、执行计划、慢 SQL 优化、分库分表",formal
+COURSE.008,"Redis 核心实战",拉勾教育,https://edu.lagou.com/course/redis,500,false,zh,intermediate,"C.hard.db.nosql","数据结构、持久化、主从与集群、缓存设计模式",formal
+COURSE.009,"大模型应用开发实战",得到高研院,https://www.dedao.cn/course/llm-app,600,false,zh,intermediate,"C.hard.ml.dl;C.tool.prompt;C.domain.ai-app","RAG / Agent / Function Calling / 成本与延迟优化",formal
+COURSE.010,"Prompt Engineering 速成",deeplearning.ai,https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering,90,false,en,beginner,"C.tool.prompt;C.hard.ml.dl","少样本 / 思维链 / 输出结构化三板斧",formal
+COURSE.011,"LangChain 核心模块解析",B站,https://www.bilibili.com/video/BV1xx4y1q7Xs,180,false,zh,intermediate,"C.hard.prog.py;C.hard.ml.dl;C.tool.prompt","Chain/Agent/Memory/Tool 四大核心模块实战",formal
+COURSE.012,"推荐系统实战（王喆）",极客时间,https://time.geekbang.org/column/intro/322,1000,false,zh,advanced,"C.hard.ml.dl;C.hard.ml.basic","召回、精排、重排的工业级架构",formal
+COURSE.013,"Flink 流处理入门到精通",极客时间,https://time.geekbang.org/column/intro/100058801,900,false,zh,intermediate,"C.hard.data.eng","窗口、状态、CDC、Exactly-once 语义",formal
+COURSE.014,"数据仓库建模实战",慕课网,https://www.imooc.com/learn/dw-modeling,600,false,zh,intermediate,"C.hard.data.eng;C.hard.db.sql","维度建模、ODS/DWD/DWS 分层、宽表设计",formal
+COURSE.015,"Kubernetes 从入门到精通",极客时间,https://time.geekbang.org/column/intro/100015201,1500,false,zh,intermediate,"C.tool.docker;C.tool.cloud","Pod/Service/Ingress/Operator 全套实战",formal
+COURSE.016,"云原生可观测性",拉勾教育,https://edu.lagou.com/course/observability,500,false,zh,intermediate,"C.tool.observability","Metrics/Logs/Traces 三位一体的监控体系",formal
+COURSE.017,"Git 高级用法 15 分钟",YouTube,https://www.youtube.com/watch?v=GitAdvanced,15,true,en,intermediate,"C.tool.git","rebase / cherry-pick / reflog 关键操作",formal
+COURSE.018,"AI 编程助手最佳实践",极客时间,https://time.geekbang.org/ai-copilot,300,false,zh,beginner,"C.tool.aicopilot","Copilot/Cursor/CodeBuddy 的高效协作姿势",formal
+COURSE.019,"OWASP Top 10 实战解读",网络安全学院,https://owasp.edu/top10,400,false,zh,intermediate,"C.hard.security","注入 / XSS / CSRF / SSRF 实战防御",formal
+COURSE.020,"用户体验设计基础",Coursera,https://www.coursera.org/learn/ux-design,600,false,en,beginner,"C.hard.ux;C.hard.product.pm","信息架构 / 用户测试 / 设计规范",formal
+COURSE.021,"数据分析师能力地图",慕课网,https://www.imooc.com/learn/data-analyst,700,false,zh,intermediate,"C.hard.data.analysis;C.hard.db.sql","需求理解 / SQL / Python / A/B 实验",formal
+COURSE.022,"A/B 实验 15 分钟微课",极客时间,https://time.geekbang.org/microabtest,15,true,zh,intermediate,"C.hard.data.analysis","实验设计陷阱与结果解读",formal
+COURSE.023,"沟通表达训练营",得到,https://www.dedao.cn/course/communication,400,false,zh,beginner,"C.soft.comm","金字塔原理 / SCQA / 表达结构化",formal
+COURSE.024,"技术 Leader 的第一课",极客时间,https://time.geekbang.org/column/intro/tech-lead,600,false,zh,advanced,"C.soft.lead;C.soft.collab","角色转换 / 团队搭建 / 技术决策",formal
+COURSE.025,"结构化思维 12 讲",得到,https://www.dedao.cn/course/structured-thinking,360,false,zh,beginner,"C.soft.problem","MECE / 金字塔 / 假设驱动的工作方法",formal
+COURSE.026,"金融科技基础课",网易云课堂,https://study.163.com/fintech-intro,500,false,zh,beginner,"C.domain.fintech","支付 / 风控 / 清结算 / 合规概览",formal
+COURSE.027,"电商业务与运营",慕课网,https://www.imooc.com/learn/ecommerce-biz,450,false,zh,intermediate,"C.domain.ecommerce","交易链路 / 营销玩法 / 履约体系",formal
+COURSE.028,"社区与内容产品方法论",得到,https://www.dedao.cn/course/content-product,400,false,zh,intermediate,"C.domain.social","UGC 生态 / 社区治理 / 内容分发",formal
+COURSE.029,"React 18 新特性 10 分钟",B站,https://www.bilibili.com/video/BV1R18new,10,true,zh,intermediate,"C.hard.prog.ts","Concurrent Rendering / Suspense / Transition",formal
+COURSE.030,"TAPD 使用 15 分钟上手",内部培训,https://learning.tencent.com/tapd-15min,15,true,zh,beginner,"C.tool.pm","需求 / 缺陷 / 迭代三板斧",formal

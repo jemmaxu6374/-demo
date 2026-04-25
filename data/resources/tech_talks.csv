@@ -1,0 +1,13 @@
+resource_id,title,speaker,source,url,duration_min,date,language,related_competencies,summary,learning_mode
+TALK.001,"内部 AI 应用实战分享会",林悦,内部 Tech Talk,https://tt.internal/202512-ai-app,60,2025-12-15,zh,"C.hard.ml.dl;C.domain.ai-app","Agent / RAG / 评测的实战 3 讲合集",social
+TALK.002,"支付核心链路架构演进",赵磊,内部 Tech Talk,https://tt.internal/pay-arch,90,2025-09-10,zh,"C.hard.arch;C.domain.fintech","支付网关 3.0 架构演进全过程",social
+TALK.003,"推荐系统 LLM 融合探索",王浩,内部 Tech Talk,https://tt.internal/rec-llm,50,2025-11-20,zh,"C.hard.ml.dl;C.domain.social","冷启动与长尾兴趣的 LLM 方案",social
+TALK.004,"前端工程化体系建设",张雨欣,内部 Tech Talk,https://tt.internal/fe-infra,45,2025-10-18,zh,"C.hard.prog.ts;C.tool.cicd","monorepo + 构建优化 + 测试体系",social
+TALK.005,"K8s 多集群联邦实战",郑宇,内部 Tech Talk,https://tt.internal/k8s-fed,70,2025-08-22,zh,"C.tool.docker;C.tool.cloud","Karmada + 跨区域容灾的踩坑全纪录",social
+TALK.006,"技术主管第一年",冯楠,内部 Tech Talk,https://tt.internal/tech-lead-y1,60,2025-07-05,zh,"C.soft.lead;C.soft.collab","角色转换与团队建设的经验分享",social
+TALK.007,"数据驱动的产品决策",陈昕,内部 Tech Talk,https://tt.internal/data-driven-pm,50,2025-09-25,zh,"C.hard.product.pm;C.hard.data.analysis","AI 写作助手的留存分析方法",social
+TALK.008,"State of AI Report 2025",Nathan Benaich,公开大会,https://www.stateof.ai,120,2025-10-12,en,"C.hard.ml.dl;C.domain.ai-app","业界 AI 年度综述",social
+TALK.009,"The Builder's Guide to Applied AI",OpenAI DevDay,公开大会,https://devday.openai.com,90,2025-11-05,en,"C.domain.ai-app;C.tool.prompt","OpenAI 官方应用开发指南 Keynote",social
+TALK.010,"KubeCon 2025 Highlights",KubeCon,公开大会,https://events.linuxfoundation.org/kubecon,180,2025-11-18,en,"C.tool.docker;C.tool.cloud","本届 KubeCon 精选",social
+TALK.011,"Scaling A/B Testing at Netflix",Netflix Tech Blog,公开分享,https://netflixtechblog.com/ab-testing,45,2025-03-01,en,"C.hard.data.analysis","大规模 A/B 实验工程化",social
+TALK.012,"Designing for Trust in AI",Google I/O,公开大会,https://io.google/ai-trust,60,2025-05-20,en,"C.hard.ux;C.domain.ai-app","AI 产品的用户信任设计",social

@@ -1,0 +1,102 @@
+[
+  {
+    "resource_id": "MENTOR.001",
+    "name": "赵磊",
+    "employee_id": "emp_006",
+    "title": "资深后端架构师",
+    "expert_competencies": ["C.hard.arch", "C.hard.distributed", "C.domain.fintech"],
+    "capacity_per_month": 2,
+    "bio": "6 年金融后端架构，带过小团队，擅长高一致性与高可用设计",
+    "learning_mode": "social"
+  },
+  {
+    "resource_id": "MENTOR.002",
+    "name": "王浩",
+    "employee_id": "emp_003",
+    "title": "推荐算法专家",
+    "expert_competencies": ["C.hard.ml.basic", "C.hard.ml.dl", "C.domain.social"],
+    "capacity_per_month": 2,
+    "bio": "4 年推荐算法，有大规模上线经验，在 LLM + 推荐方向持续探索",
+    "learning_mode": "social"
+  },
+  {
+    "resource_id": "MENTOR.003",
+    "name": "林悦",
+    "employee_id": "emp_009",
+    "title": "AI 应用工程师",
+    "expert_competencies": ["C.hard.ml.dl", "C.tool.prompt", "C.domain.ai-app"],
+    "capacity_per_month": 3,
+    "bio": "深度 LLM 应用实战派，做过多款 Agent / RAG 系统",
+    "learning_mode": "social"
+  },
+  {
+    "resource_id": "MENTOR.004",
+    "name": "冯楠",
+    "employee_id": "emp_018",
+    "title": "AI 应用技术主管",
+    "expert_competencies": ["C.soft.lead", "C.hard.arch", "C.domain.ai-app"],
+    "capacity_per_month": 1,
+    "bio": "7 年经验，带 8 人团队，擅长技术选型与团队成长",
+    "learning_mode": "social"
+  },
+  {
+    "resource_id": "MENTOR.005",
+    "name": "徐铭",
+    "employee_id": "emp_014",
+    "title": "支付产品专家",
+    "expert_competencies": ["C.hard.product.pm", "C.domain.fintech"],
+    "capacity_per_month": 2,
+    "bio": "5 年支付产品，熟悉风控、合规、清结算全链路",
+    "learning_mode": "social"
+  },
+  {
+    "resource_id": "MENTOR.006",
+    "name": "郑宇",
+    "employee_id": "emp_010",
+    "title": "SRE 工程师",
+    "expert_competencies": ["C.tool.docker", "C.tool.observability", "C.hard.distributed"],
+    "capacity_per_month": 2,
+    "bio": "4 年 SRE，200+ 微服务 K8s 化经验",
+    "learning_mode": "social"
+  },
+  {
+    "resource_id": "MENTOR.007",
+    "name": "陈昕",
+    "employee_id": "emp_005",
+    "title": "AI 产品经理",
+    "expert_competencies": ["C.hard.product.pm", "C.tool.prompt", "C.domain.ai-app"],
+    "capacity_per_month": 3,
+    "bio": "擅长 AI 产品从 0-1，Prompt 设计能力强",
+    "learning_mode": "social"
+  },
+  {
+    "resource_id": "MENTOR.008",
+    "name": "唐小宇",
+    "employee_id": "emp_019",
+    "title": "安全工程师",
+    "expert_competencies": ["C.hard.security"],
+    "capacity_per_month": 2,
+    "bio": "安全攻防双向实战派",
+    "learning_mode": "social"
+  },
+  {
+    "resource_id": "MENTOR.009",
+    "name": "郭阳",
+    "employee_id": "emp_012",
+    "title": "大数据平台工程师",
+    "expert_competencies": ["C.hard.data.eng"],
+    "capacity_per_month": 2,
+    "bio": "Flink/Iceberg 实战派",
+    "learning_mode": "social"
+  },
+  {
+    "resource_id": "MENTOR.010",
+    "name": "吴雪",
+    "employee_id": "emp_011",
+    "title": "资深交互设计师",
+    "expert_competencies": ["C.hard.ux"],
+    "capacity_per_month": 2,
+    "bio": "主导过 2 个核心产品的设计系统",
+    "learning_mode": "social"
+  }
+]

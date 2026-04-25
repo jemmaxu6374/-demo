@@ -1,0 +1,1618 @@
+[
+  {
+    "employee_id": "emp_001",
+    "name": "李明",
+    "current_role": "后端工程师（2 年经验）",
+    "department": "交易平台",
+    "resume": "2 年 Python 后端开发经验，负责订单系统核心服务。熟悉 Django/FastAPI，用过 MySQL 分库分表，Redis 做缓存。最近在学大模型应用，用 LangChain 做过一个内部知识库问答 Demo。",
+    "projects": [
+      {
+        "name": "订单履约系统重构",
+        "role": "核心开发",
+        "description": "将单体 Django 应用拆分为 4 个微服务，QPS 从 500 提升到 3000，通过 Kafka 做异步解耦。"
+      },
+      {
+        "name": "内部文档问答 Bot",
+        "role": "独立开发",
+        "description": "基于 LangChain + bge-m3 + ChatGLM，对接内部 Confluence，日活 ~30。"
+      }
+    ],
+    "self_assessment": {
+      "strengths": [
+        "接口设计清晰",
+        "愿意尝试新技术",
+        "线上问题响应快"
+      ],
+      "weaknesses": [
+        "大规模分布式场景经验不足",
+        "英文技术演讲还不熟练"
+      ]
+    },
+    "base_competencies": [
+      {
+        "competency_id": "C.hard.prog.py",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": [
+          "2年 Python 后端开发"
+        ]
+      },
+      {
+        "competency_id": "C.hard.arch",
+        "level": 3,
+        "confidence": 0.8,
+        "evidence": [
+          "订单履约系统重构到微服务"
+        ]
+      },
+      {
+        "competency_id": "C.hard.distributed",
+        "level": 3,
+        "confidence": 0.75,
+        "evidence": [
+          "微服务拆分+Kafka 异步解耦"
+        ]
+      },
+      {
+        "competency_id": "C.hard.db.sql",
+        "level": 3,
+        "confidence": 0.8,
+        "evidence": [
+          "MySQL 分库分表实战"
+        ]
+      },
+      {
+        "competency_id": "C.hard.db.nosql",
+        "level": 3,
+        "confidence": 0.75,
+        "evidence": [
+          "Redis 缓存"
+        ]
+      },
+      {
+        "competency_id": "C.hard.ml.dl",
+        "level": 2,
+        "confidence": 0.7,
+        "evidence": [
+          "LangChain+bge-m3 做过内部知识库问答 Demo"
+        ]
+      },
+      {
+        "competency_id": "C.tool.prompt",
+        "level": 2,
+        "confidence": 0.7,
+        "evidence": [
+          "Demo 级 Prompt 调优"
+        ]
+      },
+      {
+        "competency_id": "C.domain.ai-app",
+        "level": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "内部知识库 Bot 日活 30"
+        ]
+      },
+      {
+        "competency_id": "C.tool.git",
+        "level": 4,
+        "confidence": 0.9,
+        "evidence": [
+          "熟练"
+        ]
+      },
+      {
+        "competency_id": "C.soft.comm",
+        "level": 3,
+        "confidence": 0.7,
+        "evidence": [
+          "线上问题响应快"
+        ]
+      },
+      {
+        "competency_id": "C.soft.learn",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": [
+          "主动学习新技术"
+        ]
+      }
+    ]
+  },
+  {
+    "employee_id": "emp_002",
+    "name": "张雨欣",
+    "current_role": "前端工程师（3 年经验）",
+    "department": "用户增长",
+    "resume": "3 年前端开发，熟练 React + TypeScript + Vite。主导过两个中台后台产品的重构，引入 monorepo 管理。对动效和交互细节敏感，做过 H5 互动游戏，用 Canvas 和 GSAP。",
+    "projects": [
+      {
+        "name": "商户后台 2.0",
+        "role": "前端负责人",
+        "description": "从 Vue2 迁移到 React18，引入 pnpm workspace，构建时间从 90s 降到 20s。"
+      },
+      {
+        "name": "拉新互动 H5",
+        "role": "核心开发",
+        "description": "基于 Canvas 的抽奖转盘 + PK 对战，PV 1200w+，转化率 18%。"
+      }
+    ],
+    "self_assessment": {
+      "strengths": [
+        "视觉审美好",
+        "动效实现扎实",
+        "组件抽象能力强"
+      ],
+      "weaknesses": [
+        "Node.js 后端接触少",
+        "大型项目工程化体系搭建经验不足"
+      ]
+    },
+    "base_competencies": [
+      {
+        "competency_id": "C.hard.prog.ts",
+        "level": 4,
+        "confidence": 0.9,
+        "evidence": [
+          "熟练 React+TS"
+        ]
+      },
+      {
+        "competency_id": "C.hard.ux",
+        "level": 3,
+        "confidence": 0.75,
+        "evidence": [
+          "对动效交互敏感"
+        ]
+      },
+      {
+        "competency_id": "C.tool.cicd",
+        "level": 3,
+        "confidence": 0.7,
+        "evidence": [
+          "monorepo+构建优化"
+        ]
+      },
+      {
+        "competency_id": "C.hard.arch",
+        "level": 3,
+        "confidence": 0.7,
+        "evidence": [
+          "商户后台重构"
+        ]
+      },
+      {
+        "competency_id": "C.hard.testing",
+        "level": 2,
+        "confidence": 0.6,
+        "evidence": [
+          "少量 E2E"
+        ]
+      },
+      {
+        "competency_id": "C.tool.git",
+        "level": 4,
+        "confidence": 0.9,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.soft.collab",
+        "level": 3,
+        "confidence": 0.75,
+        "evidence": [
+          "前端负责人"
+        ]
+      },
+      {
+        "competency_id": "C.soft.comm",
+        "level": 3,
+        "confidence": 0.7,
+        "evidence": []
+      }
+    ]
+  },
+  {
+    "employee_id": "emp_003",
+    "name": "王浩",
+    "current_role": "算法工程师（4 年经验）",
+    "department": "推荐中台",
+    "resume": "4 年推荐系统经验，熟悉双塔/DIN/Multi-interest 等主流召回排序模型。用过 TensorFlow 和 PyTorch，做过上线的 CTR 模型。最近在研究 LLM 应用到推荐冷启动的 Prompt 方案。",
+    "projects": [
+      {
+        "name": "短视频首页精排升级",
+        "role": "核心算法",
+        "description": "MIND → DIN 升级，CTR 相对提升 6.3%，上线稳定。"
+      },
+      {
+        "name": "新用户冷启动",
+        "role": "算法负责人",
+        "description": "结合 LLM 做兴趣标签扩展，新用户 D7 留存提升 2.1%。"
+      }
+    ],
+    "self_assessment": {
+      "strengths": [
+        "模型调优经验丰富",
+        "对推荐业务理解深"
+      ],
+      "weaknesses": [
+        "系统工程侧偏弱",
+        "还没有带过新人"
+      ]
+    },
+    "base_competencies": [
+      {
+        "competency_id": "C.hard.ml.basic",
+        "level": 4,
+        "confidence": 0.9,
+        "evidence": [
+          "推荐系统 4 年"
+        ]
+      },
+      {
+        "competency_id": "C.hard.ml.dl",
+        "level": 4,
+        "confidence": 0.9,
+        "evidence": [
+          "DIN/Multi-interest 上线"
+        ]
+      },
+      {
+        "competency_id": "C.hard.prog.py",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": [
+          "TF/PyTorch"
+        ]
+      },
+      {
+        "competency_id": "C.hard.algo",
+        "level": 4,
+        "confidence": 0.8,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.domain.social",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": [
+          "短视频推荐"
+        ]
+      },
+      {
+        "competency_id": "C.tool.prompt",
+        "level": 3,
+        "confidence": 0.7,
+        "evidence": [
+          "LLM 冷启动探索"
+        ]
+      },
+      {
+        "competency_id": "C.soft.problem",
+        "level": 4,
+        "confidence": 0.8,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.soft.lead",
+        "level": 2,
+        "confidence": 0.6,
+        "evidence": [
+          "还没带过新人"
+        ]
+      }
+    ]
+  },
+  {
+    "employee_id": "emp_004",
+    "name": "刘思远",
+    "current_role": "数据工程师（1.5 年经验）",
+    "department": "数据中台",
+    "resume": "1.5 年数据开发经验，用 Spark + Airflow 搭过用户行为数仓。SQL 很熟，Python 脚本能写，对机器学习有兴趣但没实战。",
+    "projects": [
+      {
+        "name": "用户行为数仓",
+        "role": "ETL 开发",
+        "description": "搭建 DWD→DWS 两层宽表，日处理 8 亿条事件。"
+      }
+    ],
+    "self_assessment": {
+      "strengths": [
+        "SQL 扎实",
+        "细致耐心"
+      ],
+      "weaknesses": [
+        "系统设计经验不足",
+        "对上层业务不够了解"
+      ]
+    },
+    "base_competencies": [
+      {
+        "competency_id": "C.hard.db.sql",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": [
+          "SQL 扎实"
+        ]
+      },
+      {
+        "competency_id": "C.hard.data.eng",
+        "level": 3,
+        "confidence": 0.8,
+        "evidence": [
+          "Spark+Airflow 数仓"
+        ]
+      },
+      {
+        "competency_id": "C.hard.prog.py",
+        "level": 3,
+        "confidence": 0.75,
+        "evidence": [
+          "Python 脚本"
+        ]
+      },
+      {
+        "competency_id": "C.hard.ml.basic",
+        "level": 1,
+        "confidence": 0.6,
+        "evidence": [
+          "有兴趣但没实战"
+        ]
+      },
+      {
+        "competency_id": "C.soft.problem",
+        "level": 3,
+        "confidence": 0.7,
+        "evidence": [
+          "细致耐心"
+        ]
+      },
+      {
+        "competency_id": "C.hard.arch",
+        "level": 2,
+        "confidence": 0.6,
+        "evidence": [
+          "系统设计经验不足"
+        ]
+      }
+    ]
+  },
+  {
+    "employee_id": "emp_005",
+    "name": "陈昕",
+    "current_role": "产品经理（3 年经验）",
+    "department": "AI 应用",
+    "resume": "3 年互联网产品经验，最近一年专注 AI 应用产品。做过一款 AI 写作助手，MAU 15w。熟悉需求调研、PRD 撰写、数据分析，SQL 能写。在学 Python 想自己做原型。",
+    "projects": [
+      {
+        "name": "AI 写作助手",
+        "role": "产品负责人",
+        "description": "从 0-1 做到 MAU 15w，设计核心对话 Prompt 与功能编排。"
+      }
+    ],
+    "self_assessment": {
+      "strengths": [
+        "业务感强",
+        "Prompt 写得好",
+        "沟通顺畅"
+      ],
+      "weaknesses": [
+        "技术细节理解不够深",
+        "数据建模能力一般"
+      ]
+    },
+    "base_competencies": [
+      {
+        "competency_id": "C.hard.product.pm",
+        "level": 4,
+        "confidence": 0.9,
+        "evidence": [
+          "3 年产品"
+        ]
+      },
+      {
+        "competency_id": "C.domain.ai-app",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": [
+          "AI 写作助手 MAU 15w"
+        ]
+      },
+      {
+        "competency_id": "C.tool.prompt",
+        "level": 4,
+        "confidence": 0.9,
+        "evidence": [
+          "Prompt 写得好"
+        ]
+      },
+      {
+        "competency_id": "C.hard.data.analysis",
+        "level": 3,
+        "confidence": 0.75,
+        "evidence": [
+          "留存漏斗分析"
+        ]
+      },
+      {
+        "competency_id": "C.hard.db.sql",
+        "level": 3,
+        "confidence": 0.75,
+        "evidence": [
+          "SQL 能写"
+        ]
+      },
+      {
+        "competency_id": "C.hard.prog.py",
+        "level": 2,
+        "confidence": 0.6,
+        "evidence": [
+          "在学"
+        ]
+      },
+      {
+        "competency_id": "C.soft.comm",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": [
+          "沟通顺畅"
+        ]
+      },
+      {
+        "competency_id": "C.hard.ml.dl",
+        "level": 2,
+        "confidence": 0.6,
+        "evidence": [
+          "理解浅"
+        ]
+      }
+    ]
+  },
+  {
+    "employee_id": "emp_006",
+    "name": "赵磊",
+    "current_role": "资深后端工程师（6 年经验）",
+    "department": "支付平台",
+    "resume": "6 年后端开发，Java/Go 双栈。主导过支付核心链路的重构，对一致性、幂等、对账等金融核心问题很有经验。带过 3 人小组。",
+    "projects": [
+      {
+        "name": "支付网关 3.0",
+        "role": "技术负责人",
+        "description": "支持多通道聚合，TPS 峰值 8k，SLA 99.99%。"
+      },
+      {
+        "name": "清结算系统",
+        "role": "架构师",
+        "description": "引入 Saga 模式解决跨服务事务，对账一致性 99.9999%。"
+      }
+    ],
+    "self_assessment": {
+      "strengths": [
+        "架构设计功底深",
+        "问题定位快"
+      ],
+      "weaknesses": [
+        "还在补 AI 大模型知识",
+        "团队管理软技能待提升"
+      ]
+    },
+    "base_competencies": [
+      {
+        "competency_id": "C.hard.prog.go",
+        "level": 4,
+        "confidence": 0.9,
+        "evidence": [
+          "Java/Go 双栈"
+        ]
+      },
+      {
+        "competency_id": "C.hard.prog.py",
+        "level": 3,
+        "confidence": 0.7,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.hard.arch",
+        "level": 5,
+        "confidence": 0.95,
+        "evidence": [
+          "支付核心重构"
+        ]
+      },
+      {
+        "competency_id": "C.hard.distributed",
+        "level": 5,
+        "confidence": 0.95,
+        "evidence": [
+          "一致性/幂等/对账"
+        ]
+      },
+      {
+        "competency_id": "C.hard.db.sql",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.domain.fintech",
+        "level": 5,
+        "confidence": 0.95,
+        "evidence": [
+          "支付领域专家"
+        ]
+      },
+      {
+        "competency_id": "C.soft.lead",
+        "level": 3,
+        "confidence": 0.75,
+        "evidence": [
+          "带 3 人小组"
+        ]
+      },
+      {
+        "competency_id": "C.hard.ml.dl",
+        "level": 2,
+        "confidence": 0.6,
+        "evidence": [
+          "在补"
+        ]
+      }
+    ]
+  },
+  {
+    "employee_id": "emp_007",
+    "name": "孙佳",
+    "current_role": "测试开发工程师（2 年经验）",
+    "department": "质量工程",
+    "resume": "2 年测试开发，熟悉 Pytest + Playwright 自动化测试。搭过一套 UI 自动化平台，用 Python + Flask。对安全测试有兴趣，学过 OWASP Top 10。",
+    "projects": [
+      {
+        "name": "UI 自动化平台",
+        "role": "开发负责人",
+        "description": "支持录制+脚本双模式，团队 5 个项目接入，用例覆盖率 65%。"
+      }
+    ],
+    "self_assessment": {
+      "strengths": [
+        "测试思维缜密",
+        "工具链熟"
+      ],
+      "weaknesses": [
+        "后端业务理解浅",
+        "算法基础薄"
+      ]
+    },
+    "base_competencies": [
+      {
+        "competency_id": "C.hard.testing",
+        "level": 4,
+        "confidence": 0.9,
+        "evidence": [
+          "Pytest+Playwright"
+        ]
+      },
+      {
+        "competency_id": "C.hard.prog.py",
+        "level": 3,
+        "confidence": 0.8,
+        "evidence": [
+          "Python+Flask 自动化平台"
+        ]
+      },
+      {
+        "competency_id": "C.hard.security",
+        "level": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "学过 OWASP Top 10"
+        ]
+      },
+      {
+        "competency_id": "C.tool.cicd",
+        "level": 3,
+        "confidence": 0.7,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.hard.algo",
+        "level": 2,
+        "confidence": 0.6,
+        "evidence": [
+          "算法基础薄"
+        ]
+      },
+      {
+        "competency_id": "C.hard.arch",
+        "level": 2,
+        "confidence": 0.6,
+        "evidence": [
+          "后端业务理解浅"
+        ]
+      }
+    ]
+  },
+  {
+    "employee_id": "emp_008",
+    "name": "周晨",
+    "current_role": "前端工程师（1 年经验）",
+    "department": "内容社区",
+    "resume": "1 年前端，熟悉 React，Vue 也做过。对设计系统感兴趣，自己开源过一个按钮组件库（500+ star）。",
+    "projects": [
+      {
+        "name": "社区动态流重构",
+        "role": "开发",
+        "description": "虚拟列表+骨架屏优化，首屏时间从 2.1s 降到 0.8s。"
+      }
+    ],
+    "self_assessment": {
+      "strengths": [
+        "工程化态度好",
+        "代码质量高"
+      ],
+      "weaknesses": [
+        "缺乏大型系统经验",
+        "跨团队协作还在学"
+      ]
+    },
+    "base_competencies": [
+      {
+        "competency_id": "C.hard.prog.ts",
+        "level": 3,
+        "confidence": 0.8,
+        "evidence": [
+          "React+Vue"
+        ]
+      },
+      {
+        "competency_id": "C.hard.ux",
+        "level": 3,
+        "confidence": 0.7,
+        "evidence": [
+          "开源按钮组件库 500 star"
+        ]
+      },
+      {
+        "competency_id": "C.hard.testing",
+        "level": 2,
+        "confidence": 0.6,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.soft.collab",
+        "level": 2,
+        "confidence": 0.6,
+        "evidence": [
+          "跨团队协作在学"
+        ]
+      },
+      {
+        "competency_id": "C.hard.arch",
+        "level": 1,
+        "confidence": 0.55,
+        "evidence": [
+          "缺大型系统经验"
+        ]
+      }
+    ]
+  },
+  {
+    "employee_id": "emp_009",
+    "name": "林悦",
+    "current_role": "AI 应用工程师（2 年经验）",
+    "department": "AI 应用",
+    "resume": "2 年 LLM 应用开发经验，深度用过 LangChain/LlamaIndex，做过 RAG、Agent、Function Calling 多种方案。Python 扎实，但后端系统工程薄弱。",
+    "projects": [
+      {
+        "name": "智能客服 Agent",
+        "role": "核心开发",
+        "description": "多工具编排 + 长期记忆，解决率从 40% 提升到 68%。"
+      },
+      {
+        "name": "企业知识库 RAG",
+        "role": "技术负责人",
+        "description": "bge-m3 + 多路召回 + rerank，Top-3 命中率 82%。"
+      }
+    ],
+    "self_assessment": {
+      "strengths": [
+        "LLM 应用实战多",
+        "Prompt 调优能力强"
+      ],
+      "weaknesses": [
+        "高并发后端服务设计经验不足",
+        "对模型训练/微调了解浅"
+      ]
+    },
+    "base_competencies": [
+      {
+        "competency_id": "C.hard.prog.py",
+        "level": 4,
+        "confidence": 0.9,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.hard.ml.dl",
+        "level": 3,
+        "confidence": 0.8,
+        "evidence": [
+          "LLM 应用 2 年"
+        ]
+      },
+      {
+        "competency_id": "C.tool.prompt",
+        "level": 4,
+        "confidence": 0.9,
+        "evidence": [
+          "深度 Prompt"
+        ]
+      },
+      {
+        "competency_id": "C.domain.ai-app",
+        "level": 4,
+        "confidence": 0.9,
+        "evidence": [
+          "Agent/RAG 上线"
+        ]
+      },
+      {
+        "competency_id": "C.hard.arch",
+        "level": 2,
+        "confidence": 0.6,
+        "evidence": [
+          "后端系统工程薄弱"
+        ]
+      },
+      {
+        "competency_id": "C.hard.distributed",
+        "level": 2,
+        "confidence": 0.6,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.hard.db.nosql",
+        "level": 3,
+        "confidence": 0.7,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.soft.problem",
+        "level": 3,
+        "confidence": 0.75,
+        "evidence": []
+      }
+    ]
+  },
+  {
+    "employee_id": "emp_010",
+    "name": "郑宇",
+    "current_role": "运维/SRE 工程师（4 年经验）",
+    "department": "基础平台",
+    "resume": "4 年 SRE 经验，熟练 K8s/Prometheus/Grafana/ELK。做过多次线上故障处理与复盘，写过几篇内部最佳实践。",
+    "projects": [
+      {
+        "name": "K8s 容器平台建设",
+        "role": "核心成员",
+        "description": "承接 200+ 微服务迁移，可用性 99.95%。"
+      }
+    ],
+    "self_assessment": {
+      "strengths": [
+        "稳定性设计经验丰富",
+        "故障复盘写得好"
+      ],
+      "weaknesses": [
+        "编程能力偏脚本化",
+        "业务侧理解浅"
+      ]
+    },
+    "base_competencies": [
+      {
+        "competency_id": "C.tool.docker",
+        "level": 5,
+        "confidence": 0.95,
+        "evidence": [
+          "K8s 承接 200+ 微服务"
+        ]
+      },
+      {
+        "competency_id": "C.tool.cloud",
+        "level": 4,
+        "confidence": 0.9,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.tool.observability",
+        "level": 5,
+        "confidence": 0.95,
+        "evidence": [
+          "Prom/Grafana/ELK"
+        ]
+      },
+      {
+        "competency_id": "C.tool.cicd",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.hard.distributed",
+        "level": 3,
+        "confidence": 0.7,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.hard.prog.py",
+        "level": 3,
+        "confidence": 0.7,
+        "evidence": [
+          "脚本"
+        ]
+      },
+      {
+        "competency_id": "C.soft.problem",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": [
+          "故障复盘"
+        ]
+      },
+      {
+        "competency_id": "C.soft.ownership",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": []
+      }
+    ]
+  },
+  {
+    "employee_id": "emp_011",
+    "name": "吴雪",
+    "current_role": "交互设计师（3 年经验）",
+    "department": "用户体验",
+    "resume": "3 年 UX 设计，熟练 Figma/Sketch。主导过 2 个核心产品的设计系统。最近在学前端基础，能看懂 React 代码。",
+    "projects": [
+      {
+        "name": "设计系统 2.0",
+        "role": "主导设计",
+        "description": "建立组件规范+设计 token，团队 8 个产品线复用。"
+      }
+    ],
+    "self_assessment": {
+      "strengths": [
+        "信息架构清晰",
+        "可用性测试扎实"
+      ],
+      "weaknesses": [
+        "数据分析能力待提升",
+        "产品决策推动力不足"
+      ]
+    },
+    "base_competencies": [
+      {
+        "competency_id": "C.hard.ux",
+        "level": 4,
+        "confidence": 0.9,
+        "evidence": [
+          "设计系统 2.0"
+        ]
+      },
+      {
+        "competency_id": "C.hard.product.pm",
+        "level": 2,
+        "confidence": 0.6,
+        "evidence": [
+          "推动力不足"
+        ]
+      },
+      {
+        "competency_id": "C.hard.prog.ts",
+        "level": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "能看懂 React"
+        ]
+      },
+      {
+        "competency_id": "C.soft.comm",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.soft.collab",
+        "level": 3,
+        "confidence": 0.75,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.hard.data.analysis",
+        "level": 2,
+        "confidence": 0.6,
+        "evidence": [
+          "待提升"
+        ]
+      }
+    ]
+  },
+  {
+    "employee_id": "emp_012",
+    "name": "郭阳",
+    "current_role": "大数据平台工程师（3 年经验）",
+    "department": "数据中台",
+    "resume": "3 年大数据平台开发，熟悉 Flink 流式计算、Iceberg 数据湖。Java+Scala 双栈。",
+    "projects": [
+      {
+        "name": "实时指标平台",
+        "role": "核心开发",
+        "description": "Flink + Doris，日指标 2w+，延迟 P99 < 3s。"
+      }
+    ],
+    "self_assessment": {
+      "strengths": [
+        "流处理经验足",
+        "对底层细节敏感"
+      ],
+      "weaknesses": [
+        "AI/ML 方向空白",
+        "产品思维较弱"
+      ]
+    },
+    "base_competencies": [
+      {
+        "competency_id": "C.hard.data.eng",
+        "level": 4,
+        "confidence": 0.9,
+        "evidence": [
+          "Flink+Iceberg"
+        ]
+      },
+      {
+        "competency_id": "C.hard.db.sql",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.hard.prog.py",
+        "level": 3,
+        "confidence": 0.7,
+        "evidence": [
+          "Java+Scala 为主"
+        ]
+      },
+      {
+        "competency_id": "C.hard.arch",
+        "level": 3,
+        "confidence": 0.75,
+        "evidence": [
+          "实时指标平台"
+        ]
+      },
+      {
+        "competency_id": "C.tool.cloud",
+        "level": 3,
+        "confidence": 0.7,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.hard.ml.dl",
+        "level": 1,
+        "confidence": 0.55,
+        "evidence": [
+          "AI 方向空白"
+        ]
+      },
+      {
+        "competency_id": "C.hard.product.pm",
+        "level": 1,
+        "confidence": 0.5,
+        "evidence": [
+          "产品思维较弱"
+        ]
+      }
+    ]
+  },
+  {
+    "employee_id": "emp_013",
+    "name": "马辰",
+    "current_role": "后端工程师（新人，6 个月）",
+    "department": "交易平台",
+    "resume": "应届毕业生 6 个月，Java 背景。在校做过一个小型电商项目。对分布式系统有理论认知但缺实战。",
+    "projects": [
+      {
+        "name": "新人培训期项目",
+        "role": "实习开发",
+        "description": "实现一个简单订单系统 Demo，Spring Boot + MySQL。"
+      }
+    ],
+    "self_assessment": {
+      "strengths": [
+        "学习意愿强",
+        "基础知识扎实"
+      ],
+      "weaknesses": [
+        "线上经验为 0",
+        "代码评审常被打回"
+      ]
+    },
+    "base_competencies": [
+      {
+        "competency_id": "C.hard.prog.py",
+        "level": 2,
+        "confidence": 0.6,
+        "evidence": [
+          "Java 背景"
+        ]
+      },
+      {
+        "competency_id": "C.hard.db.sql",
+        "level": 2,
+        "confidence": 0.65,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.hard.arch",
+        "level": 1,
+        "confidence": 0.6,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.hard.distributed",
+        "level": 1,
+        "confidence": 0.5,
+        "evidence": [
+          "理论认知但无实战"
+        ]
+      },
+      {
+        "competency_id": "C.tool.git",
+        "level": 2,
+        "confidence": 0.7,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.soft.learn",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": [
+          "学习意愿强"
+        ]
+      }
+    ]
+  },
+  {
+    "employee_id": "emp_014",
+    "name": "徐铭",
+    "current_role": "高级产品经理（5 年经验）",
+    "department": "支付平台",
+    "resume": "5 年支付产品经验，深度理解风控、合规、清结算。带过 2 人团队。对技术细节理解不深。",
+    "projects": [
+      {
+        "name": "聚合支付产品",
+        "role": "产品负责人",
+        "description": "对接 6 家通道，月交易额 10 亿+。"
+      }
+    ],
+    "self_assessment": {
+      "strengths": [
+        "金融业务深",
+        "合规嗅觉灵敏"
+      ],
+      "weaknesses": [
+        "AI/数据能力一般",
+        "对工程侧权衡理解不足"
+      ]
+    },
+    "base_competencies": [
+      {
+        "competency_id": "C.hard.product.pm",
+        "level": 5,
+        "confidence": 0.95,
+        "evidence": [
+          "5 年支付产品"
+        ]
+      },
+      {
+        "competency_id": "C.domain.fintech",
+        "level": 5,
+        "confidence": 0.95,
+        "evidence": [
+          "聚合支付 10 亿+/月"
+        ]
+      },
+      {
+        "competency_id": "C.hard.security",
+        "level": 3,
+        "confidence": 0.75,
+        "evidence": [
+          "合规嗅觉"
+        ]
+      },
+      {
+        "competency_id": "C.soft.collab",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.soft.lead",
+        "level": 3,
+        "confidence": 0.75,
+        "evidence": [
+          "带 2 人"
+        ]
+      },
+      {
+        "competency_id": "C.hard.data.analysis",
+        "level": 2,
+        "confidence": 0.6,
+        "evidence": [
+          "一般"
+        ]
+      },
+      {
+        "competency_id": "C.hard.ml.dl",
+        "level": 1,
+        "confidence": 0.5,
+        "evidence": [
+          "理解不足"
+        ]
+      }
+    ]
+  },
+  {
+    "employee_id": "emp_015",
+    "name": "何思琪",
+    "current_role": "算法工程师（1.5 年经验）",
+    "department": "NLP 平台",
+    "resume": "1.5 年 NLP 算法，做过文本分类、情感分析。最近在跟 LLM 微调方向，跑过 LoRA 实验。对系统工程薄弱。",
+    "projects": [
+      {
+        "name": "多语种评论情感分析",
+        "role": "算法开发",
+        "description": "BERT 多任务，12 语种，F1 ~0.85。"
+      }
+    ],
+    "self_assessment": {
+      "strengths": [
+        "学术基础好",
+        "模型实验执行快"
+      ],
+      "weaknesses": [
+        "工程落地经验少",
+        "Prompt Engineering 还不系统"
+      ]
+    },
+    "base_competencies": [
+      {
+        "competency_id": "C.hard.ml.basic",
+        "level": 3,
+        "confidence": 0.8,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.hard.ml.dl",
+        "level": 3,
+        "confidence": 0.8,
+        "evidence": [
+          "BERT+LoRA"
+        ]
+      },
+      {
+        "competency_id": "C.hard.prog.py",
+        "level": 3,
+        "confidence": 0.75,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.tool.prompt",
+        "level": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "还不系统"
+        ]
+      },
+      {
+        "competency_id": "C.hard.arch",
+        "level": 2,
+        "confidence": 0.6,
+        "evidence": [
+          "工程落地弱"
+        ]
+      },
+      {
+        "competency_id": "C.hard.data.eng",
+        "level": 2,
+        "confidence": 0.6,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.soft.learn",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": [
+          "学术基础好"
+        ]
+      }
+    ]
+  },
+  {
+    "employee_id": "emp_016",
+    "name": "韩子睿",
+    "current_role": "全栈工程师（3 年经验）",
+    "department": "创新实验室",
+    "resume": "3 年全栈，Next.js + Node.js + PostgreSQL。独立做过 3 个内部效率工具。对 AI Copilot 很熟，CodeBuddy/Cursor 深度用户。",
+    "projects": [
+      {
+        "name": "代码评审助手",
+        "role": "独立开发",
+        "description": "Next.js + GPT-4，接入 GitLab webhook，团队日均节省 2 小时 review。"
+      }
+    ],
+    "self_assessment": {
+      "strengths": [
+        "交付速度快",
+        "AI 工具用得很溜"
+      ],
+      "weaknesses": [
+        "大型系统架构缺经验",
+        "对规模化性能优化不熟"
+      ]
+    },
+    "base_competencies": [
+      {
+        "competency_id": "C.hard.prog.ts",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": [
+          "Next.js"
+        ]
+      },
+      {
+        "competency_id": "C.hard.prog.py",
+        "level": 3,
+        "confidence": 0.75,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.hard.db.sql",
+        "level": 3,
+        "confidence": 0.75,
+        "evidence": [
+          "PostgreSQL"
+        ]
+      },
+      {
+        "competency_id": "C.tool.aicopilot",
+        "level": 5,
+        "confidence": 0.95,
+        "evidence": [
+          "Cursor/CodeBuddy 深度用户"
+        ]
+      },
+      {
+        "competency_id": "C.tool.prompt",
+        "level": 3,
+        "confidence": 0.75,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.hard.arch",
+        "level": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "大型系统缺经验"
+        ]
+      },
+      {
+        "competency_id": "C.soft.ownership",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": [
+          "交付快"
+        ]
+      }
+    ]
+  },
+  {
+    "employee_id": "emp_017",
+    "name": "黄雅",
+    "current_role": "数据分析师（2 年经验）",
+    "department": "商业分析",
+    "resume": "2 年业务数据分析，SQL 很熟，用过 Python 做统计与可视化。做过 A/B 实验设计与评估。",
+    "projects": [
+      {
+        "name": "付费转化漏斗诊断",
+        "role": "分析负责人",
+        "description": "定位关键流失环节，推动产品改版后转化率提升 3.2%。"
+      }
+    ],
+    "self_assessment": {
+      "strengths": [
+        "业务理解好",
+        "沟通能力强"
+      ],
+      "weaknesses": [
+        "机器学习建模弱",
+        "大数据处理框架不熟"
+      ]
+    },
+    "base_competencies": [
+      {
+        "competency_id": "C.hard.data.analysis",
+        "level": 4,
+        "confidence": 0.9,
+        "evidence": [
+          "漏斗诊断"
+        ]
+      },
+      {
+        "competency_id": "C.hard.db.sql",
+        "level": 4,
+        "confidence": 0.9,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.hard.prog.py",
+        "level": 3,
+        "confidence": 0.75,
+        "evidence": [
+          "统计+可视化"
+        ]
+      },
+      {
+        "competency_id": "C.hard.product.pm",
+        "level": 3,
+        "confidence": 0.7,
+        "evidence": [
+          "业务理解"
+        ]
+      },
+      {
+        "competency_id": "C.soft.comm",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.hard.ml.basic",
+        "level": 2,
+        "confidence": 0.6,
+        "evidence": [
+          "建模弱"
+        ]
+      },
+      {
+        "competency_id": "C.hard.data.eng",
+        "level": 1,
+        "confidence": 0.55,
+        "evidence": [
+          "大数据框架不熟"
+        ]
+      }
+    ]
+  },
+  {
+    "employee_id": "emp_018",
+    "name": "冯楠",
+    "current_role": "技术主管（7 年经验）",
+    "department": "AI 应用",
+    "resume": "7 年经验，带 8 人团队。做过后端 → 算法 → AI 应用方向切换。擅长团队管理与技术选型。",
+    "projects": [
+      {
+        "name": "AI 应用产品化",
+        "role": "技术主管",
+        "description": "带团队从 0 到 1 做出 3 个 AI 产品，两个上线稳定运营。"
+      }
+    ],
+    "self_assessment": {
+      "strengths": [
+        "选型判断准",
+        "团队培养有章法"
+      ],
+      "weaknesses": [
+        "一线写代码时间少",
+        "具体技术栈细节在衰退"
+      ]
+    },
+    "base_competencies": [
+      {
+        "competency_id": "C.soft.lead",
+        "level": 5,
+        "confidence": 0.95,
+        "evidence": [
+          "8 人团队"
+        ]
+      },
+      {
+        "competency_id": "C.hard.arch",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": [
+          "选型判断准"
+        ]
+      },
+      {
+        "competency_id": "C.domain.ai-app",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": [
+          "3 个 AI 产品"
+        ]
+      },
+      {
+        "competency_id": "C.hard.ml.dl",
+        "level": 3,
+        "confidence": 0.75,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.soft.comm",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.soft.collab",
+        "level": 4,
+        "confidence": 0.85,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.soft.ownership",
+        "level": 5,
+        "confidence": 0.95,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.hard.prog.py",
+        "level": 3,
+        "confidence": 0.7,
+        "evidence": [
+          "一线写代码减少"
+        ]
+      }
+    ]
+  },
+  {
+    "employee_id": "emp_019",
+    "name": "唐小宇",
+    "current_role": "安全工程师（2 年经验）",
+    "department": "安全",
+    "resume": "2 年安全工程，做过代码审计、渗透测试、应急响应。Python/Go 脚本能写。对云安全架构有兴趣。",
+    "projects": [
+      {
+        "name": "业务安全平台",
+        "role": "核心开发",
+        "description": "搭建风险画像与实时拦截，月拦截异常请求 50w+。"
+      }
+    ],
+    "self_assessment": {
+      "strengths": [
+        "安全嗅觉敏锐",
+        "合规知识扎实"
+      ],
+      "weaknesses": [
+        "算法/AI 方向空白",
+        "前端接触少"
+      ]
+    },
+    "base_competencies": [
+      {
+        "competency_id": "C.hard.security",
+        "level": 4,
+        "confidence": 0.9,
+        "evidence": [
+          "代码审计+渗透+应急"
+        ]
+      },
+      {
+        "competency_id": "C.hard.prog.py",
+        "level": 3,
+        "confidence": 0.75,
+        "evidence": [
+          "脚本"
+        ]
+      },
+      {
+        "competency_id": "C.hard.prog.go",
+        "level": 2,
+        "confidence": 0.65,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.tool.cloud",
+        "level": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "云安全有兴趣"
+        ]
+      },
+      {
+        "competency_id": "C.hard.data.analysis",
+        "level": 2,
+        "confidence": 0.6,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.hard.ml.dl",
+        "level": 1,
+        "confidence": 0.5,
+        "evidence": [
+          "空白"
+        ]
+      }
+    ]
+  },
+  {
+    "employee_id": "emp_020",
+    "name": "于萌",
+    "current_role": "客户端工程师 iOS（3 年经验）",
+    "department": "移动端",
+    "resume": "3 年 iOS 开发，Swift/SwiftUI 熟练。做过性能优化与卡顿治理。最近想补后端和 AI 技能。",
+    "projects": [
+      {
+        "name": "App 启动优化",
+        "role": "性能负责人",
+        "description": "冷启动时长从 1.8s 降到 0.9s。"
+      }
+    ],
+    "self_assessment": {
+      "strengths": [
+        "性能调优深",
+        "端上体验敏感"
+      ],
+      "weaknesses": [
+        "后端服务设计经验几乎为 0",
+        "数据/AI 背景空白"
+      ]
+    },
+    "base_competencies": [
+      {
+        "competency_id": "C.hard.prog.ts",
+        "level": 2,
+        "confidence": 0.6,
+        "evidence": [
+          "前端接触少"
+        ]
+      },
+      {
+        "competency_id": "C.tool.observability",
+        "level": 3,
+        "confidence": 0.7,
+        "evidence": [
+          "性能调优"
+        ]
+      },
+      {
+        "competency_id": "C.hard.arch",
+        "level": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "后端服务设计几乎为 0"
+        ]
+      },
+      {
+        "competency_id": "C.hard.ml.dl",
+        "level": 1,
+        "confidence": 0.5,
+        "evidence": [
+          "AI 空白"
+        ]
+      },
+      {
+        "competency_id": "C.hard.data.analysis",
+        "level": 1,
+        "confidence": 0.55,
+        "evidence": []
+      },
+      {
+        "competency_id": "C.soft.problem",
+        "level": 3,
+        "confidence": 0.75,
+        "evidence": [
+          "启动优化"
+        ]
+      }
+    ]
+  }
+]

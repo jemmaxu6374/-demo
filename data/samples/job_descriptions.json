@@ -1,0 +1,179 @@
+[
+  {
+    "jd_id": "jd_001",
+    "title": "资深后端工程师（分布式方向）",
+    "level": "P6",
+    "department": "交易平台",
+    "description": "负责核心交易链路的架构设计与高可用保障。要求 3 年以上后端经验，精通至少一种主流语言（Go/Java/Python），熟悉分布式系统核心概念（一致性、幂等、分库分表），有高并发（万级 QPS）系统设计与上线经验。能独立推进跨团队协作。",
+    "required_competencies": [
+      {"competency_id": "C.hard.prog.py", "need_level": 4, "weight": 0.10},
+      {"competency_id": "C.hard.prog.go", "need_level": 4, "weight": 0.15},
+      {"competency_id": "C.hard.arch", "need_level": 4, "weight": 0.20},
+      {"competency_id": "C.hard.distributed", "need_level": 4, "weight": 0.20},
+      {"competency_id": "C.hard.db.sql", "need_level": 4, "weight": 0.10},
+      {"competency_id": "C.hard.db.nosql", "need_level": 3, "weight": 0.05},
+      {"competency_id": "C.soft.comm", "need_level": 3, "weight": 0.05},
+      {"competency_id": "C.soft.collab", "need_level": 3, "weight": 0.05},
+      {"competency_id": "C.tool.git", "need_level": 4, "weight": 0.05},
+      {"competency_id": "C.tool.observability", "need_level": 3, "weight": 0.05}
+    ]
+  },
+  {
+    "jd_id": "jd_002",
+    "title": "AI 应用工程师（LLM 应用方向）",
+    "level": "P5",
+    "department": "AI 应用",
+    "description": "负责 LLM 驱动的 To-B/To-C 应用研发。要求 Python 扎实，熟悉 LangChain/LlamaIndex 至少一个，懂 RAG / Agent / Function Calling，能独立完成 Prompt 设计与优化。有后端服务开发经验。",
+    "required_competencies": [
+      {"competency_id": "C.hard.prog.py", "need_level": 4, "weight": 0.15},
+      {"competency_id": "C.hard.ml.dl", "need_level": 3, "weight": 0.15},
+      {"competency_id": "C.tool.prompt", "need_level": 4, "weight": 0.15},
+      {"competency_id": "C.domain.ai-app", "need_level": 3, "weight": 0.10},
+      {"competency_id": "C.hard.arch", "need_level": 3, "weight": 0.10},
+      {"competency_id": "C.hard.db.sql", "need_level": 3, "weight": 0.05},
+      {"competency_id": "C.hard.db.nosql", "need_level": 3, "weight": 0.05},
+      {"competency_id": "C.tool.aicopilot", "need_level": 4, "weight": 0.10},
+      {"competency_id": "C.soft.problem", "need_level": 3, "weight": 0.05},
+      {"competency_id": "C.soft.learn", "need_level": 4, "weight": 0.10}
+    ]
+  },
+  {
+    "jd_id": "jd_003",
+    "title": "前端架构师",
+    "level": "P7",
+    "department": "中台前端",
+    "description": "带领前端团队做工程化体系建设与跨端方案选型。要求 5 年以上 TS/React 经验，主导过大型项目的架构设计，熟悉 monorepo、构建工具链、微前端。",
+    "required_competencies": [
+      {"competency_id": "C.hard.prog.ts", "need_level": 5, "weight": 0.20},
+      {"competency_id": "C.hard.arch", "need_level": 4, "weight": 0.15},
+      {"competency_id": "C.hard.testing", "need_level": 3, "weight": 0.05},
+      {"competency_id": "C.tool.git", "need_level": 4, "weight": 0.05},
+      {"competency_id": "C.tool.cicd", "need_level": 4, "weight": 0.10},
+      {"competency_id": "C.soft.lead", "need_level": 4, "weight": 0.15},
+      {"competency_id": "C.soft.comm", "need_level": 4, "weight": 0.10},
+      {"competency_id": "C.soft.collab", "need_level": 4, "weight": 0.10},
+      {"competency_id": "C.soft.problem", "need_level": 4, "weight": 0.10}
+    ]
+  },
+  {
+    "jd_id": "jd_004",
+    "title": "推荐算法工程师",
+    "level": "P6",
+    "department": "推荐中台",
+    "description": "负责推荐系统召回/排序算法研发。要求 3 年以上推荐算法经验，熟悉 DIN/多兴趣/双塔等主流模型，有 CTR 模型上线经验。",
+    "required_competencies": [
+      {"competency_id": "C.hard.ml.basic", "need_level": 4, "weight": 0.20},
+      {"competency_id": "C.hard.ml.dl", "need_level": 4, "weight": 0.20},
+      {"competency_id": "C.hard.prog.py", "need_level": 4, "weight": 0.10},
+      {"competency_id": "C.hard.data.eng", "need_level": 3, "weight": 0.10},
+      {"competency_id": "C.hard.algo", "need_level": 4, "weight": 0.10},
+      {"competency_id": "C.domain.social", "need_level": 3, "weight": 0.10},
+      {"competency_id": "C.soft.problem", "need_level": 4, "weight": 0.10},
+      {"competency_id": "C.soft.comm", "need_level": 3, "weight": 0.10}
+    ]
+  },
+  {
+    "jd_id": "jd_005",
+    "title": "数据工程师（数仓方向）",
+    "level": "P5",
+    "department": "数据中台",
+    "description": "负责大数据平台建设与数据模型设计。要求 2 年以上数据工程经验，精通 SQL，熟悉 Spark/Flink 至少一种，有数仓建模经验。",
+    "required_competencies": [
+      {"competency_id": "C.hard.data.eng", "need_level": 4, "weight": 0.25},
+      {"competency_id": "C.hard.db.sql", "need_level": 4, "weight": 0.20},
+      {"competency_id": "C.hard.prog.py", "need_level": 3, "weight": 0.10},
+      {"competency_id": "C.hard.data.analysis", "need_level": 3, "weight": 0.10},
+      {"competency_id": "C.tool.cicd", "need_level": 3, "weight": 0.10},
+      {"competency_id": "C.tool.cloud", "need_level": 3, "weight": 0.10},
+      {"competency_id": "C.soft.problem", "need_level": 3, "weight": 0.10},
+      {"competency_id": "C.soft.collab", "need_level": 3, "weight": 0.05}
+    ]
+  },
+  {
+    "jd_id": "jd_006",
+    "title": "AI 产品经理",
+    "level": "P6",
+    "department": "AI 应用",
+    "description": "负责 AI 应用产品的需求规划与落地。要求 3 年以上产品经验，其中至少 1 年 AI 相关。能写 Prompt，理解 LLM 能力边界与成本结构。",
+    "required_competencies": [
+      {"competency_id": "C.hard.product.pm", "need_level": 4, "weight": 0.25},
+      {"competency_id": "C.domain.ai-app", "need_level": 4, "weight": 0.20},
+      {"competency_id": "C.tool.prompt", "need_level": 4, "weight": 0.15},
+      {"competency_id": "C.hard.data.analysis", "need_level": 3, "weight": 0.10},
+      {"competency_id": "C.hard.ml.dl", "need_level": 2, "weight": 0.05},
+      {"competency_id": "C.soft.comm", "need_level": 4, "weight": 0.10},
+      {"competency_id": "C.soft.collab", "need_level": 4, "weight": 0.10},
+      {"competency_id": "C.soft.ownership", "need_level": 4, "weight": 0.05}
+    ]
+  },
+  {
+    "jd_id": "jd_007",
+    "title": "SRE 工程师（云原生方向）",
+    "level": "P6",
+    "department": "基础平台",
+    "description": "负责核心业务线的稳定性保障与容量规划。要求精通 K8s、可观测性体系，有大型线上故障处理经验。",
+    "required_competencies": [
+      {"competency_id": "C.tool.docker", "need_level": 4, "weight": 0.20},
+      {"competency_id": "C.tool.observability", "need_level": 4, "weight": 0.20},
+      {"competency_id": "C.tool.cloud", "need_level": 4, "weight": 0.15},
+      {"competency_id": "C.tool.cicd", "need_level": 4, "weight": 0.10},
+      {"competency_id": "C.hard.prog.py", "need_level": 3, "weight": 0.05},
+      {"competency_id": "C.hard.prog.go", "need_level": 3, "weight": 0.05},
+      {"competency_id": "C.hard.distributed", "need_level": 3, "weight": 0.10},
+      {"competency_id": "C.soft.problem", "need_level": 4, "weight": 0.10},
+      {"competency_id": "C.soft.ownership", "need_level": 4, "weight": 0.05}
+    ]
+  },
+  {
+    "jd_id": "jd_008",
+    "title": "测试开发工程师（质量平台方向）",
+    "level": "P5",
+    "department": "质量工程",
+    "description": "负责内部测试平台建设。要求 2 年以上测试开发经验，能独立设计自动化测试体系，熟悉 Python/Go 与前端基础。",
+    "required_competencies": [
+      {"competency_id": "C.hard.testing", "need_level": 4, "weight": 0.25},
+      {"competency_id": "C.hard.prog.py", "need_level": 3, "weight": 0.15},
+      {"competency_id": "C.hard.prog.ts", "need_level": 3, "weight": 0.10},
+      {"competency_id": "C.tool.cicd", "need_level": 3, "weight": 0.10},
+      {"competency_id": "C.tool.git", "need_level": 3, "weight": 0.05},
+      {"competency_id": "C.hard.security", "need_level": 3, "weight": 0.10},
+      {"competency_id": "C.soft.problem", "need_level": 4, "weight": 0.15},
+      {"competency_id": "C.soft.comm", "need_level": 3, "weight": 0.10}
+    ]
+  },
+  {
+    "jd_id": "jd_009",
+    "title": "高级数据分析师",
+    "level": "P6",
+    "department": "商业分析",
+    "description": "服务业务一号位，做增长洞察与决策支持。要求 3 年以上分析经验，SQL 精通，Python 熟悉，会 A/B 实验设计。",
+    "required_competencies": [
+      {"competency_id": "C.hard.data.analysis", "need_level": 4, "weight": 0.25},
+      {"competency_id": "C.hard.db.sql", "need_level": 4, "weight": 0.15},
+      {"competency_id": "C.hard.prog.py", "need_level": 3, "weight": 0.10},
+      {"competency_id": "C.hard.ml.basic", "need_level": 3, "weight": 0.10},
+      {"competency_id": "C.hard.product.pm", "need_level": 3, "weight": 0.10},
+      {"competency_id": "C.soft.comm", "need_level": 4, "weight": 0.10},
+      {"competency_id": "C.soft.problem", "need_level": 4, "weight": 0.10},
+      {"competency_id": "C.soft.collab", "need_level": 3, "weight": 0.10}
+    ]
+  },
+  {
+    "jd_id": "jd_010",
+    "title": "技术主管（AI 应用团队）",
+    "level": "P7",
+    "department": "AI 应用",
+    "description": "带 6-10 人团队做 AI 应用产品研发。要求 5 年以上经验，其中至少 1 年 AI 相关。有独立带团队经验，懂技术选型与人才培养。",
+    "required_competencies": [
+      {"competency_id": "C.soft.lead", "need_level": 5, "weight": 0.20},
+      {"competency_id": "C.soft.comm", "need_level": 4, "weight": 0.10},
+      {"competency_id": "C.soft.collab", "need_level": 4, "weight": 0.10},
+      {"competency_id": "C.soft.ownership", "need_level": 5, "weight": 0.10},
+      {"competency_id": "C.hard.arch", "need_level": 4, "weight": 0.15},
+      {"competency_id": "C.domain.ai-app", "need_level": 4, "weight": 0.15},
+      {"competency_id": "C.hard.ml.dl", "need_level": 3, "weight": 0.10},
+      {"competency_id": "C.tool.prompt", "need_level": 3, "weight": 0.05},
+      {"competency_id": "C.hard.product.pm", "need_level": 3, "weight": 0.05}
+    ]
+  }
+]

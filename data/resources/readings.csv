@@ -1,0 +1,26 @@
+resource_id,title,author,url,type,language,level,related_competencies,summary,learning_mode
+READ.001,"Designing Data-Intensive Applications",Martin Kleppmann,https://dataintensive.net,book,en,advanced,"C.hard.arch;C.hard.distributed;C.hard.db.sql;C.hard.db.nosql","分布式系统经典，一致性/复制/分区/批流处理通览",formal
+READ.002,"架构整洁之道",Robert C. Martin,https://book.douban.com/subject/30333919,book,zh,intermediate,"C.hard.arch","SOLID / 依赖倒置 / 边界 / 组件设计",formal
+READ.003,"Python 官方文档",Python.org,https://docs.python.org/3,doc,en,beginner,"C.hard.prog.py","Python 语言与标准库最权威参考",formal
+READ.004,"Go 语言官方文档",golang.org,https://go.dev/doc,doc,en,beginner,"C.hard.prog.go","Go 语言规范、Tour、Effective Go",formal
+READ.005,"React 官方文档",React,https://react.dev,doc,en,beginner,"C.hard.prog.ts","React 核心概念与 Hooks 最佳实践",formal
+READ.006,"Attention Is All You Need",Vaswani et al. (2017),https://arxiv.org/abs/1706.03762,paper,en,advanced,"C.hard.ml.dl","Transformer 原始论文，LLM 必读",formal
+READ.007,"LLM Powered Autonomous Agents",Lilian Weng,https://lilianweng.github.io/posts/2023-06-23-agent,blog,en,intermediate,"C.hard.ml.dl;C.domain.ai-app","Agent 架构：规划/记忆/工具调用/反思",formal
+READ.008,"Prompt Engineering Guide",DAIR.AI,https://www.promptingguide.ai,doc,en,beginner,"C.tool.prompt","业界 Prompt 工程系统化指南",formal
+READ.009,"高性能 MySQL（第 4 版）",Baron Schwartz 等,https://book.douban.com/subject/34778001,book,zh,advanced,"C.hard.db.sql","索引 / 查询优化 / 复制 / 备份",formal
+READ.010,"Redis 设计与实现",黄健宏,https://redisbook.com,book,zh,intermediate,"C.hard.db.nosql","Redis 数据结构与底层实现原理",formal
+READ.011,"凤凰架构",周志明,https://icyfenix.cn,book,zh,advanced,"C.hard.arch;C.hard.distributed","面向现代分布式架构的系统化总结",formal
+READ.012,"Kubernetes in Action",Marko Luksa,https://www.manning.com/books/kubernetes-in-action,book,en,intermediate,"C.tool.docker;C.tool.cloud","K8s 实战圣经",formal
+READ.013,"Observability Engineering",Majors et al.,https://www.honeycomb.io/observability-engineering,book,en,advanced,"C.tool.observability","可观测性三支柱与实践",formal
+READ.014,"金字塔原理",Barbara Minto,https://book.douban.com/subject/1020644,book,zh,beginner,"C.soft.comm;C.soft.problem","结构化思维与表达的经典之作",formal
+READ.015,"Accelerate",Forsgren et al.,https://itrevolution.com/book/accelerate,book,en,intermediate,"C.soft.lead;C.tool.cicd","DevOps / DORA 四大核心指标与高效能团队",formal
+READ.016,"Designing Your Life",Bill Burnett,https://designingyour.life,book,en,beginner,"C.soft.learn","用设计思维规划职业与个人成长",formal
+READ.017,"推荐系统实践",项亮,https://book.douban.com/subject/10769749,book,zh,intermediate,"C.hard.ml.basic","主流推荐算法与评估方法",formal
+READ.018,"The Art of A/B Testing",Kohavi et al.,https://experimentguide.com,book,en,advanced,"C.hard.data.analysis","A/B 实验设计与分析工业级实践",formal
+READ.019,"OWASP Top 10 2021",OWASP,https://owasp.org/Top10,doc,en,intermediate,"C.hard.security","最常见 Web 应用安全风险",formal
+READ.020,"Refactoring（重构，第 2 版）",Martin Fowler,https://refactoring.com,book,zh,intermediate,"C.hard.prog.py;C.hard.testing","代码坏味道与重构手法",formal
+READ.021,"用户体验要素",Jesse James Garrett,https://book.douban.com/subject/3089826,book,zh,beginner,"C.hard.ux","UX 五层模型经典入门",formal
+READ.022,"Streaming Systems",Akidau et al.,https://www.oreilly.com/streaming-systems,book,en,advanced,"C.hard.data.eng","Apache Beam 团队的流式计算权威",formal
+READ.023,"Effective Java",Joshua Bloch,https://book.douban.com/subject/30412517,book,zh,intermediate,"C.hard.algo;C.hard.arch","Java 编程规范与设计典范（思路可迁移）",formal
+READ.024,"产品经理必修课",俞军,https://book.douban.com/subject/33455366,book,zh,intermediate,"C.hard.product.pm","产品思维与决策框架",formal
+READ.025,"Clean Architecture 实践落地",CodeBuddy 团队内部文档,https://kmdoc.woa.com/clean-arch,doc,zh,intermediate,"C.hard.arch","腾讯内部对整洁架构的落地经验（虚构内部链接）",formal

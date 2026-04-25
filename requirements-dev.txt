@@ -1,0 +1,40 @@
+# 完整开发依赖（本地开发 / 接入真 LLM 时用）
+# 部署到 Streamlit Cloud 时用 requirements.txt（精简版）
+
+-r requirements.txt
+
+# Frontend 高级组件
+streamlit-elements>=0.1.0
+
+# LLM
+openai>=1.12.0
+anthropic>=0.18.0
+langchain>=0.1.10
+langchain-openai>=0.0.8
+
+# Embedding
+sentence-transformers>=2.5.0
+
+# Vector store
+chromadb>=0.4.24
+
+# Data
+pandas>=2.2.0
+polars>=0.20.0
+numpy>=1.26.0
+
+# Parsing
+pdfplumber>=0.10.3
+python-docx>=1.1.0
+
+# Async & Scheduling
+aiohttp>=3.9.3
+apscheduler>=3.10.4
+
+# Utils
+tqdm>=4.66.0
+rich>=13.7.0
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0

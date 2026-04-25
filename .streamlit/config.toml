@@ -1,0 +1,29 @@
+# Streamlit 运行时配置（Streamlit Cloud 会读取）
+# 参考：https://docs.streamlit.io/develop/api-reference/configuration/config.toml
+
+[theme]
+base = "light"
+primaryColor = "#1E40AF"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F1F5F9"
+textColor = "#0F172A"
+font = "sans serif"
+
+[server]
+# Cloud 环境下这些由平台控制；留默认即可
+headless = true
+runOnSave = false
+enableCORS = false
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
+
+[client]
+# 隐藏右上角 "made with streamlit" 水印和菜单
+toolbarMode = "minimal"
+showErrorDetails = false
+
+[runner]
+# 提高默认 cache 容量，适合有较多 @st.cache_data 的画像 / 推荐缓存
+fastReruns = true

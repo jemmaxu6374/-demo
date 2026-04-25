@@ -1,0 +1,320 @@
+{
+  "version": "1.0.0",
+  "description": "知识工作者能力本体（v1.0 聚焦技术岗分支），参考 O*NET / ESCO / LinkedIn Skills 简化，四大类三级结构。",
+  "categories": [
+    {
+      "id": "CAT.hard",
+      "name": "硬技能",
+      "description": "可直接用于产出代码、数据、文档、设计的技术性能力。",
+      "decay_type": "hard"
+    },
+    {
+      "id": "CAT.soft",
+      "name": "软技能",
+      "description": "沟通协作、抽象思维、跨团队推进等稳定且迁移性强的能力。",
+      "decay_type": "soft"
+    },
+    {
+      "id": "CAT.domain",
+      "name": "领域知识",
+      "description": "行业、业务、合规等随时间缓慢衰减的知识体系。",
+      "decay_type": "domain"
+    },
+    {
+      "id": "CAT.tool",
+      "name": "工具熟练度",
+      "description": "研发流程、AI Copilot、协作平台等具体工具的使用熟练度。",
+      "decay_type": "hard"
+    }
+  ],
+  "competencies": [
+    {
+      "id": "C.hard.prog.py",
+      "name": "Python 编程",
+      "parent_id": "CAT.hard",
+      "description": "能用 Python 实现后端服务、数据处理、脚本工具，熟悉主流标准库与生态。",
+      "aliases": ["Python", "py", "python开发", "python编程"],
+      "decay_type": "hard"
+    },
+    {
+      "id": "C.hard.prog.ts",
+      "name": "TypeScript/JavaScript",
+      "parent_id": "CAT.hard",
+      "description": "能用 TS/JS 实现前端或 Node.js 后端，理解类型系统与异步模型。",
+      "aliases": ["TypeScript", "JavaScript", "TS", "JS", "前端开发"],
+      "decay_type": "hard"
+    },
+    {
+      "id": "C.hard.prog.go",
+      "name": "Go 编程",
+      "parent_id": "CAT.hard",
+      "description": "能用 Go 实现高并发后端服务，理解 goroutine/channel 与错误处理模式。",
+      "aliases": ["Go", "Golang"],
+      "decay_type": "hard"
+    },
+    {
+      "id": "C.hard.algo",
+      "name": "算法与数据结构",
+      "parent_id": "CAT.hard",
+      "description": "掌握常见数据结构与算法，能分析复杂度并优化性能瓶颈。",
+      "aliases": ["算法", "数据结构", "DSA"],
+      "decay_type": "soft"
+    },
+    {
+      "id": "C.hard.arch",
+      "name": "系统架构设计",
+      "parent_id": "CAT.hard",
+      "description": "能做服务拆分、接口设计、容量估算、一致性与可用性权衡。",
+      "aliases": ["架构设计", "系统设计", "分布式设计"],
+      "decay_type": "soft"
+    },
+    {
+      "id": "C.hard.db.sql",
+      "name": "SQL 与关系型数据库",
+      "parent_id": "CAT.hard",
+      "description": "能写复杂查询、设计索引、做查询优化，理解事务与隔离级别。",
+      "aliases": ["SQL", "MySQL", "PostgreSQL", "关系型数据库"],
+      "decay_type": "hard"
+    },
+    {
+      "id": "C.hard.db.nosql",
+      "name": "NoSQL 数据库",
+      "parent_id": "CAT.hard",
+      "description": "熟悉 Redis/MongoDB/ES 等至少一种 NoSQL，能做选型与容量规划。",
+      "aliases": ["Redis", "MongoDB", "Elasticsearch", "NoSQL"],
+      "decay_type": "hard"
+    },
+    {
+      "id": "C.hard.distributed",
+      "name": "分布式系统",
+      "parent_id": "CAT.hard",
+      "description": "理解 CAP / Raft / 消息队列 / 分库分表等分布式核心概念并有实战。",
+      "aliases": ["分布式", "微服务", "消息队列", "Kafka"],
+      "decay_type": "soft"
+    },
+    {
+      "id": "C.hard.ml.basic",
+      "name": "机器学习基础",
+      "parent_id": "CAT.hard",
+      "description": "掌握监督/无监督学习主流算法，能做特征工程与模型评估。",
+      "aliases": ["机器学习", "ML", "监督学习"],
+      "decay_type": "soft"
+    },
+    {
+      "id": "C.hard.ml.dl",
+      "name": "深度学习与大模型",
+      "parent_id": "CAT.hard",
+      "description": "理解 Transformer、Fine-tune、Prompt Engineering，能做 LLM 应用开发。",
+      "aliases": ["深度学习", "DL", "LLM", "大模型", "Transformer"],
+      "decay_type": "hard"
+    },
+    {
+      "id": "C.hard.data.eng",
+      "name": "数据工程",
+      "parent_id": "CAT.hard",
+      "description": "能搭建 ETL、数据仓库、流式处理管道，熟悉 Spark/Flink/Airflow 之一。",
+      "aliases": ["数据工程", "ETL", "数仓", "Spark", "Flink"],
+      "decay_type": "hard"
+    },
+    {
+      "id": "C.hard.data.analysis",
+      "name": "数据分析",
+      "parent_id": "CAT.hard",
+      "description": "能从业务问题出发做探索性分析，输出可解读的结论与可视化。",
+      "aliases": ["数据分析", "EDA", "业务分析"],
+      "decay_type": "soft"
+    },
+    {
+      "id": "C.hard.testing",
+      "name": "测试与质量工程",
+      "parent_id": "CAT.hard",
+      "description": "能设计单元/集成/E2E 测试，理解覆盖率与测试金字塔。",
+      "aliases": ["测试", "单元测试", "TDD", "质量保障"],
+      "decay_type": "hard"
+    },
+    {
+      "id": "C.hard.security",
+      "name": "信息安全与合规",
+      "parent_id": "CAT.hard",
+      "description": "理解常见安全威胁（OWASP Top 10）与合规要求，能做安全编码与审查。",
+      "aliases": ["安全", "合规", "信息安全", "OWASP"],
+      "decay_type": "domain"
+    },
+    {
+      "id": "C.hard.product.pm",
+      "name": "产品设计与管理",
+      "parent_id": "CAT.hard",
+      "description": "能做用户调研、需求拆解、PRD 撰写、灰度与数据验证。",
+      "aliases": ["产品设计", "PM", "PRD", "需求分析"],
+      "decay_type": "soft"
+    },
+    {
+      "id": "C.hard.ux",
+      "name": "用户体验设计",
+      "parent_id": "CAT.hard",
+      "description": "能做信息架构、交互设计、可用性测试，输出可落地的设计规范。",
+      "aliases": ["UX", "UI", "交互设计", "用户体验"],
+      "decay_type": "soft"
+    },
+    {
+      "id": "C.soft.comm",
+      "name": "沟通表达",
+      "parent_id": "CAT.soft",
+      "description": "能用口头/书面方式清晰传递技术与业务观点，分层匹配听众。",
+      "aliases": ["沟通", "表达", "演讲"],
+      "decay_type": "soft"
+    },
+    {
+      "id": "C.soft.collab",
+      "name": "跨团队协作",
+      "parent_id": "CAT.soft",
+      "description": "能在多团队目标不一致时推进共识，管理边界与依赖。",
+      "aliases": ["协作", "跨部门", "协同"],
+      "decay_type": "soft"
+    },
+    {
+      "id": "C.soft.problem",
+      "name": "问题拆解与结构化思维",
+      "parent_id": "CAT.soft",
+      "description": "能把复杂模糊问题拆成可执行子任务，识别关键路径。",
+      "aliases": ["问题拆解", "结构化思维", "系统思考"],
+      "decay_type": "soft"
+    },
+    {
+      "id": "C.soft.learn",
+      "name": "自主学习与反思",
+      "parent_id": "CAT.soft",
+      "description": "能主动识别能力缺口并系统化补齐，从项目复盘中抽取通用经验。",
+      "aliases": ["学习能力", "复盘", "自驱"],
+      "decay_type": "soft"
+    },
+    {
+      "id": "C.soft.lead",
+      "name": "技术领导力",
+      "parent_id": "CAT.soft",
+      "description": "能带领小团队定方向、拆任务、评审产出、培养新人。",
+      "aliases": ["领导力", "技术 Lead", "Mentorship"],
+      "decay_type": "soft"
+    },
+    {
+      "id": "C.soft.ownership",
+      "name": "结果导向与 Ownership",
+      "parent_id": "CAT.soft",
+      "description": "能对交付结果负责，在资源受限时主动协调、不推诿。",
+      "aliases": ["Ownership", "责任感", "主人翁"],
+      "decay_type": "soft"
+    },
+    {
+      "id": "C.domain.fintech",
+      "name": "金融科技",
+      "parent_id": "CAT.domain",
+      "description": "理解支付、风控、清结算、合规等金融业务核心链路。",
+      "aliases": ["金融", "支付", "风控", "Fintech"],
+      "decay_type": "domain"
+    },
+    {
+      "id": "C.domain.ecommerce",
+      "name": "电商业务",
+      "parent_id": "CAT.domain",
+      "description": "熟悉交易/营销/履约/售后全链路，理解漏斗与转化核心指标。",
+      "aliases": ["电商", "交易", "营销", "履约"],
+      "decay_type": "domain"
+    },
+    {
+      "id": "C.domain.social",
+      "name": "社交与内容",
+      "parent_id": "CAT.domain",
+      "description": "理解 UGC/PGC 内容生态、推荐与分发机制、社区治理。",
+      "aliases": ["社交", "内容", "推荐", "社区"],
+      "decay_type": "domain"
+    },
+    {
+      "id": "C.domain.game",
+      "name": "游戏业务",
+      "parent_id": "CAT.domain",
+      "description": "理解游戏数值、战斗、匹配、经济系统等核心玩法模块。",
+      "aliases": ["游戏", "数值", "匹配"],
+      "decay_type": "domain"
+    },
+    {
+      "id": "C.domain.ai-app",
+      "name": "AI 应用产品",
+      "parent_id": "CAT.domain",
+      "description": "熟悉 AI 产品化路径：场景选型、效果评估、成本与延迟权衡、上线灰度。",
+      "aliases": ["AI 产品", "AI 应用", "大模型应用"],
+      "decay_type": "domain"
+    },
+    {
+      "id": "C.tool.git",
+      "name": "Git 与代码协作",
+      "parent_id": "CAT.tool",
+      "description": "熟练使用 Git 分支模型、Code Review、PR 流程。",
+      "aliases": ["Git", "GitHub", "GitLab", "Code Review"],
+      "decay_type": "hard"
+    },
+    {
+      "id": "C.tool.cicd",
+      "name": "CI/CD 与 DevOps",
+      "parent_id": "CAT.tool",
+      "description": "能配置流水线、自动化测试与部署，理解蓝绿/金丝雀发布。",
+      "aliases": ["CI/CD", "DevOps", "Jenkins", "GitHub Actions"],
+      "decay_type": "hard"
+    },
+    {
+      "id": "C.tool.docker",
+      "name": "容器化（Docker/K8s）",
+      "parent_id": "CAT.tool",
+      "description": "能用 Docker 打包应用，理解 K8s 核心对象与部署模型。",
+      "aliases": ["Docker", "Kubernetes", "K8s", "容器"],
+      "decay_type": "hard"
+    },
+    {
+      "id": "C.tool.cloud",
+      "name": "云平台",
+      "parent_id": "CAT.tool",
+      "description": "熟悉公有云核心服务（计算/存储/网络/数据库），能做架构选型。",
+      "aliases": ["云", "腾讯云", "AWS", "阿里云"],
+      "decay_type": "hard"
+    },
+    {
+      "id": "C.tool.observability",
+      "name": "可观测性",
+      "parent_id": "CAT.tool",
+      "description": "能搭建 Logs/Metrics/Traces，定位线上问题并做容量规划。",
+      "aliases": ["监控", "可观测性", "Prometheus", "日志"],
+      "decay_type": "hard"
+    },
+    {
+      "id": "C.tool.aicopilot",
+      "name": "AI Copilot 协作开发",
+      "parent_id": "CAT.tool",
+      "description": "能用 Copilot/Cursor/CodeBuddy 等 AI 工具提升研发效率，懂得编写高质量 Prompt。",
+      "aliases": ["Copilot", "Cursor", "CodeBuddy", "AI 辅助编码"],
+      "decay_type": "hard"
+    },
+    {
+      "id": "C.tool.prompt",
+      "name": "Prompt Engineering",
+      "parent_id": "CAT.tool",
+      "description": "能设计结构化 Prompt、少样本示例与思维链，稳定约束 LLM 输出。",
+      "aliases": ["Prompt", "提示词工程", "Few-shot"],
+      "decay_type": "hard"
+    },
+    {
+      "id": "C.tool.notion",
+      "name": "协作文档与知识管理",
+      "parent_id": "CAT.tool",
+      "description": "能用腾讯文档/Notion/Confluence 建立可检索的团队知识库。",
+      "aliases": ["腾讯文档", "Notion", "Confluence", "文档"],
+      "decay_type": "soft"
+    },
+    {
+      "id": "C.tool.pm",
+      "name": "项目管理工具",
+      "parent_id": "CAT.tool",
+      "description": "能用 TAPD/Jira/OKR 工具跟踪进度、管理风险、同步信息。",
+      "aliases": ["TAPD", "Jira", "OKR", "项目管理"],
+      "decay_type": "soft"
+    }
+  ]
+}
