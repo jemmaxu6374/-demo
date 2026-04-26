@@ -197,6 +197,7 @@ def _render_step_admin_focus():
     with col_r:
         if st.button("开始 AI 组织体检 🚀", key="btn_start_admin",
                      type="primary", use_container_width=True):
+            st.session_state.view_mode = "ld"
             st.session_state.wizard_state["jd_id"] = focus_jd
             st.session_state.wizard_state["focus_mode"] = (
                 None if cat.startswith("（不") else cat
@@ -398,11 +399,14 @@ def _render_completed_plan(plan):
             ("📊 赋能 ROI 仪表", "9_赋能ROI仪表"),
         ]
 
+    # 为 admin 路径的跳转链接附上 view=ld query 参数
+    link_view = "?view=ld" if plan.name == "org_checkup" else ""
+
     for i, (label, page) in enumerate(deep_pages):
         with cols[i]:
-            # st.page_link 是 Streamlit 1.31+ 的新 API
+            page_url = f"pages/{page}.py{link_view}"
             try:
-                st.page_link(f"pages/{page}.py", label=label, use_container_width=True)
+                st.page_link(page_url, label=label, use_container_width=True)
             except Exception:
                 if st.button(label, key=f"jump_{page}", use_container_width=True):
                     st.info(f"请从左侧菜单点击 **{label}** 进入")

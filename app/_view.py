@@ -33,6 +33,10 @@ VIEW_META = {
 
 
 def current_view() -> ViewMode:
+    # URL query 参数优先（从向导跳转时 session_state 可能未及时传递）
+    url_mode = st.query_params.get("view", "")
+    if url_mode in ("ld", "employee"):
+        return url_mode
     return st.session_state.get("view_mode", "employee")
 
 
@@ -49,18 +53,26 @@ def view_meta(mode: ViewMode | None = None) -> dict:
 
 
 def render_view_switcher(in_sidebar: bool = True):
-    """在侧边栏渲染视角切换 radio。调用后会写入 session_state。"""
+    """在侧边栏渲染视角切换 radio。调用后会写入 session_state。
+
+    若 URL 中有 view 参数，以 URL 为准（防止向导跳转后被侧边栏默认覆盖）。
+    """
     container = st.sidebar if in_sidebar else st
+    # URL 参数优先；没有时用 session_state；再没有默认 employee
+    url_mode = st.query_params.get("view", "")
+    current = url_mode if url_mode in ("ld", "employee") else current_view()
     container.markdown("### 🔀 视角切换")
     choice = container.radio(
         "选择视角",
         options=["employee", "ld"],
         format_func=lambda v: VIEW_META[v]["label"],
-        index=0 if current_view() == "employee" else 1,
+        index=0 if current == "employee" else 1,
         key="_view_switcher",
         label_visibility="collapsed",
     )
-    st.session_state["view_mode"] = choice
+    # 只有在用户主动切换时才写入 session_state（不在 URL 有值时覆盖）
+    if not url_mode:
+        st.session_state["view_mode"] = choice
     container.caption(VIEW_META[choice]["caption"])
     container.divider()
 
