@@ -149,6 +149,9 @@ def _render_step_employee_select():
                         "选 TA →", key=f"pick_{eid}", use_container_width=True,
                     ):
                         st.session_state.wizard_state["employee_id"] = eid
+                        # 同步到顶层 session_state，供 pages/ 下详情页读取
+                        st.session_state["employee_id"] = eid
+                        st.session_state["view_mode"] = "employee"
                         _goto(2)
 
     st.divider()
@@ -239,6 +242,8 @@ def _render_step_jd_select():
                     if st.button("选此岗位 →", key=f"pick_jd_{jd['jd_id']}",
                                  use_container_width=True):
                         st.session_state.wizard_state["jd_id"] = jd["jd_id"]
+                        # 同步到顶层 session_state，供 pages/ 下详情页读取
+                        st.session_state["jd_id"] = jd["jd_id"]
                         _goto(3)
 
     st.divider()
