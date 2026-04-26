@@ -400,7 +400,7 @@ def _render_completed_plan(plan):
         ]
 
     # 为 admin 路径的跳转链接附上 view=ld query 参数
-    link_view = "?view=ld" if plan.name == "org_checkup" else ""
+    link_view = "?view=ld" if plan.name == "admin_org_checkup" else ""
 
     for i, (label, page) in enumerate(deep_pages):
         with cols[i]:
