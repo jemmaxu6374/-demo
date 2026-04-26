@@ -109,14 +109,53 @@ class MockProvider(LLMProvider):
         return json.dumps({"additional_competencies": [], "summary": "[mock] 岗位画像摘要"}, ensure_ascii=False)
 
     def _mock_rank_gap(self, prompt: str, rng: random.Random) -> str:
-        # 给 prompt 中出现的 comp_id 打优先级
+        """确定性 Mock：从 prompt 里解析 gap/weight，按与启发式一致的规则返回。
+
+        prompt 行格式（见 gap_analyzer.py）:
+          - C.xxx.yyy(名称): have=2.0, need=4, gap=2.0, weight=0.05
+        """
+        # 匹配每行的 comp_id + gap + weight
+        line_pat = re.compile(
+            r"(C\.[a-z.]+\.[a-z0-9]+)[^\n]*?gap=([\d.]+)[^\n]*?weight=([\d.]+)"
+        )
+        matches = line_pat.findall(prompt)
+
+        def _heuristic(gap: float, weight: float) -> str:
+            if gap <= 0:
+                return "low"
+            score = gap * weight
+            if score >= 0.40:
+                return "high"
+            if score >= 0.15:
+                return "mid"
+            if gap >= 2 and score >= 0.08:
+                return "mid"
+            return "low"
+
+        if matches:
+            items = []
+            for cid, gap_s, w_s in matches[:10]:
+                gap = float(gap_s)
+                w = float(w_s)
+                prio = _heuristic(gap, w)
+                items.append({
+                    "competency_id": cid,
+                    "priority": prio,
+                    "rationale": (
+                        f"[mock] gap={gap:.1f} × weight={w:.2f} = {gap * w:.2f}，"
+                        f"加权缺口为 {prio}"
+                    ),
+                })
+            return json.dumps({"ranked": items}, ensure_ascii=False)
+
+        # 兜底：prompt 里没能解析出结构化信息，只抽 comp_id 全部判 mid
         comp_ids = re.findall(r"C\.[a-z.]+\.[a-z0-9]+", prompt)
         comp_ids = list(dict.fromkeys(comp_ids))[:10]
         items = [
             {
                 "competency_id": cid,
-                "priority": rng.choice(["high", "mid", "low"]),
-                "rationale": f"[mock] {cid} 优先级分析（模拟）",
+                "priority": "mid",
+                "rationale": f"[mock] {cid} 优先级分析（缺结构化信息，默认 mid）",
             }
             for cid in comp_ids
         ]

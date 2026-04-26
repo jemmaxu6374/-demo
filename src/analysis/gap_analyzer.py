@@ -23,13 +23,21 @@ from src.schemas import EmployeeProfile, GapItem, JobProfile  # noqa: E402
 
 
 def _priority_from_score(gap: float, weight: float) -> str:
-    """优先级启发式：gap × weight。阈值用于 LLM 失败时兜底。"""
+    """优先级启发式：以加权分 score=gap×weight 为主。
+
+    设计原则：weight 反映该能力对岗位的重要性，绝对 gap 再大但 weight 很小
+    也不应该是 high（否则"英语阅读差 2 级"会盖过"核心技术差 1 级"）。
+    """
     if gap <= 0:
         return "low"
     score = gap * weight
-    if gap >= 2 or score >= 0.25:
-        return "high"
-    if gap >= 1 or score >= 0.10:
+    # 主判定：按加权分
+    if score >= 0.40:
+        return "high"   # 核心缺口（如 gap=2, weight=0.20 或 gap=1, weight=0.40）
+    if score >= 0.15:
+        return "mid"    # 中等缺口
+    # 次判定：绝对 gap 很大但 weight 小，给 mid 不给 high
+    if gap >= 2 and score >= 0.08:
         return "mid"
     return "low"
 
