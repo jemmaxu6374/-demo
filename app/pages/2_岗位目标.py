@@ -1,4 +1,8 @@
-"""岗位目标页：JD 详情 + 能力需求雷达 + 权重条。"""
+"""岗位目标页。
+
+- 员工视角：JD 详情 + 能力需求雷达 + 权重条
+- L&D 视角：所有岗位的能力需求聚合（组织最需要哪些能力）
+"""
 from __future__ import annotations
 
 import sys
@@ -11,11 +15,64 @@ sys.path.insert(0, str(ROOT))
 import plotly.graph_objects as go  # noqa: E402
 import streamlit as st  # noqa: E402
 
-from src.profile.job_builder import build_profile, get_jd_raw  # noqa: E402
+from app._view import inject_theme_css, is_ld, render_view_banner  # noqa: E402
+from src.profile.job_builder import build_profile, get_jd_raw, list_jds  # noqa: E402
 from src.profile.ontology_loader import category_name, competency_name, get_competency  # noqa: E402
 
 
-st.set_page_config(page_title="岗位目标", page_icon="🎯", layout="wide")
+st.set_page_config(page_title="岗位目标 / 岗位需求聚合", page_icon="🎯", layout="wide")
+inject_theme_css()
+
+# --------------------- L&D 视角分支 ---------------------
+if is_ld():
+    st.title("🎯 组织岗位能力需求聚合")
+    st.caption("10 份 JD × 加权 need_level 聚合，回答：组织当前最重视哪些能力？")
+    render_view_banner()
+
+    jobs = [build_profile(j["jd_id"]) for j in list_jds()]
+
+    # 聚合每个 competency 在多少个 JD 中出现 + 加权平均 need × weight
+    comp_demand = defaultdict(lambda: {"count": 0, "score": 0.0})
+    for job in jobs:
+        for cid, need, w in job.required_competencies:
+            comp_demand[cid]["count"] += 1
+            comp_demand[cid]["score"] += need * w
+
+    ranked = sorted(comp_demand.items(), key=lambda x: -x[1]["score"])[:18]
+
+    c1, c2 = st.columns(2)
+    with c1:
+        st.markdown("#### 🔥 岗位最需要的能力（Top-18）")
+        fig = go.Figure(data=go.Bar(
+            x=[v["score"] for _, v in ranked],
+            y=[competency_name(cid) for cid, _ in ranked],
+            orientation="h",
+            text=[f"{v['count']}/{len(jobs)} 个岗位" for _, v in ranked],
+            textposition="auto",
+            marker=dict(color="#6D28D9"),
+        ))
+        fig.update_layout(
+            height=520, margin=dict(t=10, b=20, l=20, r=20),
+            xaxis_title="聚合 need × weight",
+            yaxis=dict(autorange="reversed"),
+        )
+        st.plotly_chart(fig, use_container_width=True)
+
+    with c2:
+        st.markdown("#### 📋 岗位清单")
+        for j in list_jds():
+            with st.expander(f"{j['title']}（{j.get('level', '')}） · {j['department']}"):
+                st.caption(j["description"])
+                st.markdown("**核心能力需求**")
+                top = sorted(j["required_competencies"], key=lambda x: -x["weight"])[:5]
+                for rc in top:
+                    st.markdown(
+                        f"- {competency_name(rc['competency_id'])} · need L{rc['need_level']} · w {rc['weight']:.1%}"
+                    )
+
+    st.stop()
+# ------------------------------------------------------------
+
 st.title("🎯 岗位目标")
 st.caption("目标岗位的 JD 文本 + 结构化能力清单（need_level × weight）。")
 

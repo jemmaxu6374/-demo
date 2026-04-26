@@ -1,9 +1,7 @@
-"""赋能推荐页（核心）：
+"""赋能推荐页（核心）。
 
-- Gap 下拉筛选
-- 按 70-20-10 四组 Tab 展示：🎯 在实践中学 / 👥 向他人学 / 📚 系统学习 / 🛠️ 工具直接用
-- 每张卡带 learning_mode 色带、来源类型、score、命中的 competency
-- 底部 30/60/90 天成长路径
+- 员工视角：70-20-10 四组 Tab 推荐卡 + 30/60/90 天路径
+- L&D 视角：资源池规模分布 + 每类资源命中率（覆盖多少员工 Gap）
 """
 from __future__ import annotations
 
@@ -16,6 +14,7 @@ sys.path.insert(0, str(ROOT))
 
 import streamlit as st  # noqa: E402
 
+from app._view import inject_theme_css, is_ld, render_view_banner  # noqa: E402
 from src.analysis.gap_analyzer import analyze_gap  # noqa: E402
 from src.pathway.pathway_generator import generate as gen_pathway  # noqa: E402
 from src.profile.employee_builder import build_profile as build_emp  # noqa: E402
@@ -24,7 +23,113 @@ from src.profile.ontology_loader import competency_name  # noqa: E402
 from src.recommender.base import group_by_learning_mode, recommend_all  # noqa: E402
 
 
-st.set_page_config(page_title="赋能推荐", page_icon="🚀", layout="wide")
+st.set_page_config(page_title="赋能推荐 / 资源池分析", page_icon="🚀", layout="wide")
+inject_theme_css()
+
+# --------------------- L&D 视角分支 ---------------------
+if is_ld():
+    from src.recommender.base import (
+        load_cases, load_communities, load_courses, load_labs,
+        load_mentors, load_projects, load_prompts, load_readings,
+        load_talks, load_tools,
+    )
+
+    st.title("📚 学习资源池分析")
+    st.caption("按 70-20-10 分类统计资源池规模、覆盖能力、使用潜力。")
+    render_view_banner()
+
+    # 资源池规模统计
+    pools = {
+        "🎯 内部项目 + Hackathon": ("experiential", load_projects()),
+        "🎯 Lab 沙盒": ("experiential", load_labs()),
+        "👥 导师": ("social", load_mentors()),
+        "👥 案例库": ("social", load_cases()),
+        "👥 Tech Talk": ("social", load_talks()),
+        "👥 社群": ("social", load_communities()),
+        "📚 课程（含微课）": ("formal", load_courses()),
+        "📚 文档 / 书籍": ("formal", load_readings()),
+        "🛠️ AI 工具": ("tool", load_tools()),
+        "🛠️ Prompt / SOP": ("tool", load_prompts()),
+    }
+
+    # 按 mode 聚合总量
+    mode_totals = defaultdict(int)
+    for label, (mode, items) in pools.items():
+        mode_totals[mode] += len(items)
+
+    c1, c2, c3, c4 = st.columns(4)
+    with c1:
+        st.metric("🎯 实践（70%）", f"{mode_totals['experiential']} 条",
+                  help="内部项目 + Hackathon + Lab")
+    with c2:
+        st.metric("👥 社交（20%）", f"{mode_totals['social']} 条",
+                  help="导师 + 案例 + Tech Talk + 社群")
+    with c3:
+        st.metric("📚 系统学习（10%）", f"{mode_totals['formal']} 条",
+                  help="课程 + 文档 / 书籍")
+    with c4:
+        st.metric("🛠️ 工具（正交）", f"{mode_totals['tool']} 条",
+                  help="AI 工具 + Prompt / SOP")
+
+    st.divider()
+
+    c1, c2 = st.columns([3, 2])
+    with c1:
+        import plotly.graph_objects as go
+        st.markdown("#### 📊 各类资源池规模")
+        labels = list(pools.keys())
+        sizes = [len(pools[l][1]) for l in labels]
+        mode_color = {"experiential": "#F59E0B", "social": "#6366F1", "formal": "#1E40AF", "tool": "#10B981"}
+        colors = [mode_color[pools[l][0]] for l in labels]
+        fig = go.Figure(data=go.Bar(
+            x=sizes, y=labels, orientation="h",
+            text=[f"{s} 条" for s in sizes],
+            textposition="auto", marker=dict(color=colors),
+        ))
+        fig.update_layout(
+            height=440, margin=dict(t=10, b=20, l=20, r=20),
+            xaxis_title="条目数", yaxis=dict(autorange="reversed"),
+        )
+        st.plotly_chart(fig, use_container_width=True)
+
+    with c2:
+        st.markdown("#### 📐 70-20-10 实际分布 vs 目标")
+        total = sum(mode_totals.values())
+        actual = {
+            "experiential": mode_totals["experiential"] / total,
+            "social": mode_totals["social"] / total,
+            "formal": mode_totals["formal"] / total,
+            "tool": mode_totals["tool"] / total,
+        }
+        target = {"experiential": 0.70, "social": 0.20, "formal": 0.10, "tool": 0.0}
+
+        for mode in ["experiential", "social", "formal", "tool"]:
+            emoji = {"experiential": "🎯", "social": "👥", "formal": "📚", "tool": "🛠️"}[mode]
+            t = target[mode]
+            a = actual[mode]
+            delta = a - t
+            delta_color = "#10B981" if abs(delta) < 0.05 else "#F59E0B"
+            st.markdown(
+                f"<div style='margin-bottom:.7rem'>"
+                f"<div style='font-size:.85rem'>{emoji} <b>{mode}</b> "
+                f"<span style='color:#64748B'>目标 {t:.0%} · 实际 {a:.0%}</span>"
+                f"</div>"
+                f"<div style='background:#E2E8F0;height:10px;border-radius:5px;overflow:hidden'>"
+                f"<div style='background:{mode_color[mode]};width:{a*100:.0f}%;height:10px'></div>"
+                f"</div>"
+                f"<div style='font-size:.72rem;color:{delta_color};margin-top:2px'>"
+                f"差异：{delta:+.0%}"
+                f"</div></div>",
+                unsafe_allow_html=True,
+            )
+        st.caption(
+            "💡 实际是资源**数量**分布（当前过度偏向 formal），不是推荐时"
+            "**推送**分布（推送会主动按 70-20-10 分组展示）。"
+        )
+
+    st.stop()
+# ------------------------------------------------------------
+
 st.title("🚀 赋能推荐")
 st.caption("基于 70-20-10 学习法则的七类赋能形态 + 30/60/90 天成长路径。")
 

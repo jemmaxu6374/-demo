@@ -36,12 +36,104 @@ from src.storage.repository import (  # noqa: E402
 )
 
 
-st.set_page_config(page_title="动态赋能双视图", page_icon="🕒", layout="wide")
+st.set_page_config(page_title="动态赋能双视图 / 组织演化", page_icon="🕒", layout="wide")
 
 # Cloud bootstrap（若访客直接打开此页）
 from app._bootstrap import ensure_data_ready_cached  # noqa: E402
+from app._view import inject_theme_css, is_ld, render_view_banner  # noqa: E402
 
 ensure_data_ready_cached()
+inject_theme_css()
+
+# --------------------- L&D 视角分支 ---------------------
+if is_ld():
+    import plotly.graph_objects as go
+    from src.profile.employee_builder import list_employees
+    from src.profile.ontology_loader import all_competencies, competency_name
+    from src.storage.repository import query_snapshot_at
+
+    st.title("📈 组织能力演化趋势")
+    st.caption("全员在某一能力上的平均 level 随时间变化（基于行为流 replay 的 daily snapshot）。")
+    render_view_banner()
+
+    all_comps = all_competencies()
+    cid_default_idx = next((i for i, c in enumerate(all_comps) if c.id == "C.hard.ml.dl"), 0)
+    cid = st.selectbox(
+        "🎯 选择能力",
+        [c.id for c in all_comps],
+        index=cid_default_idx,
+        format_func=lambda c: competency_name(c),
+    )
+
+    # 按周采样
+    end = datetime(2026, 4, 25, 23, 0, 0)
+    start = end - timedelta(days=180)
+    points = 24
+    step = (end - start) / points
+
+    emps = list_employees()
+    xs, avg_levels, top_levels, bottom_levels = [], [], [], []
+    for i in range(points + 1):
+        t = start + step * i
+        levels = []
+        for e in emps:
+            snap = query_snapshot_at(e["employee_id"], t)
+            if cid in snap:
+                levels.append(snap[cid].level)
+        xs.append(t)
+        if levels:
+            avg_levels.append(round(sum(levels) / len(levels), 3))
+            top_levels.append(max(levels))
+            bottom_levels.append(min(levels))
+        else:
+            avg_levels.append(None)
+            top_levels.append(None)
+            bottom_levels.append(None)
+
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(
+        x=xs + xs[::-1],
+        y=[v if v is not None else 1 for v in top_levels]
+          + [v if v is not None else 1 for v in bottom_levels[::-1]],
+        fill="toself", fillcolor="rgba(109, 40, 217, 0.15)",
+        line=dict(color="rgba(255,255,255,0)"),
+        name="min/max 范围", hoverinfo="skip",
+    ))
+    fig.add_trace(go.Scatter(
+        x=xs, y=avg_levels, mode="lines+markers",
+        line=dict(color="#6D28D9", width=3),
+        marker=dict(size=5), name=f"{competency_name(cid)} 组织均值",
+    ))
+    fig.update_layout(
+        height=440, margin=dict(t=30, b=40, l=40, r=40),
+        yaxis=dict(range=[1, 5], title="level"),
+        xaxis_title="时间（近 6 个月，按周采样）",
+        legend=dict(orientation="h", yanchor="bottom", y=1.02),
+    )
+    st.plotly_chart(fig, use_container_width=True)
+
+    # 当前 Top-5 & Bottom-5
+    st.divider()
+    now_snap_raw = [(e["employee_id"], e["name"],
+                     query_snapshot_at(e["employee_id"], end).get(cid))
+                    for e in emps]
+    now_snap = [(eid, n, r.level) for eid, n, r in now_snap_raw if r is not None]
+    now_snap.sort(key=lambda x: -x[2])
+
+    c1, c2 = st.columns(2)
+    with c1:
+        st.markdown(f"#### 🏆 当前 Top-5 `{competency_name(cid)}` 专家")
+        for eid, nm, lvl in now_snap[:5]:
+            st.markdown(f"- **{nm}** `{eid}` · <span class='badge badge-low'>L{lvl:.2f}</span>",
+                        unsafe_allow_html=True)
+    with c2:
+        st.markdown(f"#### 📉 当前 Bottom-5 `{competency_name(cid)}` 待提升")
+        for eid, nm, lvl in now_snap[-5:]:
+            st.markdown(f"- **{nm}** `{eid}` · <span class='badge badge-high'>L{lvl:.2f}</span>",
+                        unsafe_allow_html=True)
+
+    st.stop()
+# ------------------------------------------------------------
 
 st.title("🕒 动态赋能双视图（Phase 3）")
 st.caption("左侧行为流 · 右侧能力画像 + 任务 + 推送卡片；顶部时间轴可回溯 6 个月。")
